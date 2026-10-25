@@ -26,6 +26,11 @@ Ported from coywolf-pack scripts/build-bots.mjs. Verification, per bot:
      verified / user-agent (dated with the snapshot's fetchedAt).
   4. Anything else: unverified / heuristic.
 Bots that share a token are merged into the best-verified entry (mergedSlugs).
+
+curated.json may also override a bot's operator, description and note (Bots Manager
+edits), and keep a bot Radar has dropped: delisted: true plus radarRecord (its last
+Radar record) publishes it with "delisted": true. Other keys, such as review (Bots
+Manager's dated review decisions), are ignored by the build.
 """
 
 from __future__ import annotations
@@ -202,12 +207,14 @@ def build_bots(sources: dict) -> list[dict]:
         e = {
             "slug": slug,
             "name": cur.get("name") or record.get("name") or slug,
-            "operator": record.get("operator") or "",
+            "operator": cur["operator"] if "operator" in cur else record.get("operator") or "",
             "category": cur.get("category") or record.get("category") or "OTHER",
-            "description": clip(record.get("description")),
+            "description": clip(cur["description"] if "description" in cur else record.get("description")),
             **v,
             "origin": origin,
         }
+        if cur.get("note"):  # a note on the bot itself wins over the verification's
+            e["note"] = cur["note"]
         aliases = [
             a for a in cur.get("aliases", [])
             if a != "user_agent" and a.lower() != v["token"].lower() and not hash_like(a)
@@ -220,7 +227,16 @@ def build_bots(sources: dict) -> list[dict]:
             e["previousTokens"] = cur["previousTokens"]
         return e
 
-    for record in snapshot.get("bots", []):
+    # A bot Radar no longer lists stays published when curated.json marks it delisted and keeps
+    # its last Radar record (radarRecord); otherwise it drops out with the snapshot.
+    in_snapshot = {r["slug"] for r in snapshot.get("bots", [])}
+    retained = [
+        {**cur["radarRecord"], "slug": slug}
+        for slug, cur in sorted(curated.items())
+        if cur.get("delisted") and isinstance(cur.get("radarRecord"), dict) and slug not in in_snapshot
+    ]
+
+    for record in [*snapshot.get("bots", []), *retained]:
         slug = record["slug"]
         cur = curated.get(slug, {})
         if cur.get("exclude"):
@@ -357,7 +373,7 @@ def render(root: Path) -> dict[str, bytes]:
     changes = {
         "schemaVersion": SCHEMA_VERSION,
         "releases": [
-            {k: r[k] for k in ("version", "generatedAt", "summary", "baseline", "added", "removed", "tokenChanges", "groupChanges") if k in r}
+            {k: r[k] for k in ("version", "generatedAt", "summary", "baseline", "added", "removed", "delisted", "tokenChanges", "groupChanges") if k in r}
             for r in releases[:MAX_CHANGES]
         ],
     }
