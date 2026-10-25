@@ -52,7 +52,7 @@
     "url": {
       "type": "string",
       "maxLength": 2000,
-      "pattern": "^https?://"
+      "pattern": "^https?://[^\\u0000-\\u001f\\u007f]*$"
     },
     "purpose": {
       "enum": ["training", "ai-search", "ai-assistant", "search-engine", "seo", "other"]
@@ -63,8 +63,8 @@
       "additionalProperties": false,
       "properties": {
         "slug": { "$ref": "#/$defs/slug" },
-        "name": { "type": "string", "minLength": 1, "maxLength": 200 },
-        "operator": { "type": "string", "maxLength": 200 },
+        "name": { "type": "string", "minLength": 1, "maxLength": 200, "pattern": "^[^\\u0000-\\u001f\\u007f]*$" },
+        "operator": { "type": "string", "maxLength": 200, "pattern": "^[^\\u0000-\\u001f\\u007f]*$" },
         "category": {
           "description": "Cloudflare Radar category, for example AI_CRAWLER.",
           "type": "string",
@@ -73,12 +73,12 @@
           "pattern": "^[A-Z][A-Z0-9_]*$"
         },
         "purpose": { "$ref": "#/$defs/purpose" },
-        "description": { "type": "string", "maxLength": 240 },
+        "description": { "type": "string", "maxLength": 240, "pattern": "^[^\\u0000-\\u001f\\u007f]*$" },
         "token": { "$ref": "#/$defs/token" },
         "aliases": {
           "type": "array",
           "maxItems": 50,
-          "items": { "type": "string", "minLength": 1, "maxLength": 200 }
+          "items": { "type": "string", "minLength": 1, "maxLength": 200, "pattern": "^[^\\u0000-\\u001f\\u007f]*$" }
         },
         "status": { "enum": ["verified", "unverified"] },
         "evidence": {
@@ -87,7 +87,7 @@
         },
         "sourceUrl": { "$ref": "#/$defs/url" },
         "verifiedAt": { "$ref": "#/$defs/date" },
-        "note": { "type": "string", "maxLength": 1000 },
+        "note": { "type": "string", "maxLength": 1000, "pattern": "^[^\\u0000-\\u001f\\u007f]*$" },
         "origin": {
           "description": "radar: listed in Cloudflare Radar's bot directory. curated: an operator-documented bot Radar doesn't list.",
           "enum": ["radar", "curated"]
@@ -121,9 +121,9 @@
       "additionalProperties": false,
       "properties": {
         "id": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$", "maxLength": 64 },
-        "label": { "type": "string", "minLength": 1, "maxLength": 100 },
-        "phrase": { "type": "string", "minLength": 1, "maxLength": 100 },
-        "description": { "type": "string", "maxLength": 500 },
+        "label": { "type": "string", "minLength": 1, "maxLength": 100, "pattern": "^[^\\u0000-\\u001f\\u007f]*$" },
+        "phrase": { "type": "string", "minLength": 1, "maxLength": 100, "pattern": "^[^\\u0000-\\u001f\\u007f]*$" },
+        "description": { "type": "string", "maxLength": 500, "pattern": "^[^\\u0000-\\u001f\\u007f]*$" },
         "purposes": {
           "type": "array",
           "minItems": 1,

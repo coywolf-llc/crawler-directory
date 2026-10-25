@@ -15,12 +15,18 @@ Checks (plan Part 2, "Checks before every push", the data ones):
   - every purpose has a source (source/curated.json)
   - group tokens exist and are verified; nothing is both excluded and in a group
   - manifest.json matches the file (bytes, sha256, version, counts); size limit
+  - no control characters (U+0000-U+001F, U+007F) in any string
+  - dist/v1/manifest.json.sig is a valid Ed25519 signature of manifest.json by the key in keys/ed25519.json
+    (skipped with a warning only while neither the key nor a signature exists, before the first signed release)
 """
 
 from __future__ import annotations
 
 import argparse
+import base64
+import binascii
 import hashlib
+import importlib.util
 import json
 import re
 import sys
@@ -29,6 +35,18 @@ from pathlib import Path
 MAX_BYTES = 2 * 1024 * 1024  # the pack refuses larger files
 TOKEN_RE = re.compile(r"[A-Za-z0-9][A-Za-z0-9._-]*")
 DIST = Path("dist/v1")
+KEY_FILE = Path("keys/ed25519.json")
+SIGNATURE = DIST / "manifest.json.sig"
+CONTROL_RE = re.compile(r"[\x00-\x1f\x7f]")
+
+
+def _ed25519():
+    """scripts/ed25519.py (pure Python, stdlib only), loaded from next to this file."""
+    path = Path(__file__).resolve().parent / "ed25519.py"
+    spec = importlib.util.spec_from_file_location("crawler_directory_ed25519", path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
 
 
 # ── A small JSON Schema (draft 2020-12) subset ─────────────────────
@@ -112,10 +130,27 @@ def schema_errors(value, schema: dict, root: dict | None = None, path: str = "$"
 # ── Data checks ────────────────────────────────────────────────────
 
 
+def control_char_errors(value, path: str = "$", out: list | None = None) -> list[str]:
+    """Every string (and object key) must be free of control characters, newlines and tabs included."""
+    out = out if out is not None else []
+    if isinstance(value, str):
+        if CONTROL_RE.search(value):
+            out.append(f"{path}: contains a control character ({json.dumps(value)[:80]})")
+    elif isinstance(value, list):
+        for i, v in enumerate(value):
+            control_char_errors(v, f"{path}[{i}]", out)
+    elif isinstance(value, dict):
+        for k, v in value.items():
+            if CONTROL_RE.search(str(k)):
+                out.append(f"{path}: key {json.dumps(k)} contains a control character")
+            control_char_errors(v, f"{path}.{k}", out)
+    return out
+
+
 def check_directory(directory: dict, schema: dict, curated: dict | None = None, groups_src: list | None = None,
                     exceptions: dict | None = None) -> tuple[list[str], list[str]]:
     """Errors and warnings for a parsed crawler-directory.json (plus source/* when given)."""
-    errors = schema_errors(directory, schema)
+    errors = schema_errors(directory, schema) + control_char_errors(directory)
     warnings: list[str] = []
     if errors:
         return errors, warnings  # the semantic checks below assume the shape
@@ -236,6 +271,35 @@ def check_manifest(manifest: dict, raw: bytes, directory: dict) -> list[str]:
     return errors
 
 
+def check_signature(root: Path) -> tuple[list[str], list[str]]:
+    """The manifest signature, against the public key committed in keys/ed25519.json."""
+    key_path, sig_path, manifest_path = root / KEY_FILE, root / SIGNATURE, root / DIST / "manifest.json"
+    if not key_path.exists() and not sig_path.exists():
+        return [], ["manifest signature not checked: no keys/ed25519.json and no dist/v1/manifest.json.sig yet "
+                    "(expected only before the first signed release)"]
+    if not key_path.exists():
+        return ["dist/v1/manifest.json.sig exists but keys/ed25519.json doesn't; can't verify it"], []
+    try:
+        key = json.loads(key_path.read_text(encoding="utf-8"))
+        public = base64.b64decode(key["publicKey"], validate=True)
+    except (ValueError, KeyError, TypeError, binascii.Error) as e:
+        return [f"keys/ed25519.json: unreadable ({e})"], []
+    errors = []
+    if key.get("algorithm") != "Ed25519" or len(public) != 32:
+        errors.append("keys/ed25519.json: expected algorithm Ed25519 and a 32-byte publicKey")
+    if key.get("keyId") != hashlib.sha256(public).hexdigest()[:16]:
+        errors.append("keys/ed25519.json: keyId isn't the first 16 hex characters of SHA-256(publicKey)")
+    if not sig_path.exists():
+        return errors + ["dist/v1/manifest.json.sig is missing (keys/ed25519.json exists, so releases must be signed)"], []
+    try:
+        signature = base64.b64decode(sig_path.read_text(encoding="ascii").strip(), validate=True)
+    except (ValueError, binascii.Error):
+        return errors + ["dist/v1/manifest.json.sig isn't base64"], []
+    if not manifest_path.exists() or not _ed25519().verify(public, manifest_path.read_bytes(), signature):
+        errors.append("dist/v1/manifest.json.sig doesn't verify against manifest.json with the key in keys/ed25519.json")
+    return errors, []
+
+
 def _load(path: Path):
     try:
         return json.loads(path.read_text(encoding="utf-8"))
@@ -267,7 +331,10 @@ def validate(root: Path) -> tuple[list[str], list[str]]:
         errors.append("dist/v1/changes.json: expected { releases: [...] } with at most 20 entries")
     elif changes["releases"] and changes["releases"][0].get("version") != directory.get("version"):
         errors.append("dist/v1/changes.json: newest release isn't the published version")
-    return errors, warnings
+    else:
+        errors += control_char_errors(changes, "changes.json")
+    sig_errors, sig_warnings = check_signature(root)
+    return errors + sig_errors, warnings + sig_warnings
 
 
 def main(argv: list[str] | None = None) -> int:

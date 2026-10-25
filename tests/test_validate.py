@@ -33,6 +33,16 @@ class ValidateRejects(unittest.TestCase):
         self.assertEqual(errors, [])
         self.assertTrue(warnings)  # the seed's known exceptions
 
+    def test_control_characters_are_rejected(self):
+        for field, value in (("name", "Two\nCheckout"), ("operator", "Veri\x00fone"), ("description", "tab\there"),
+                             ("note", "x\x7fy"), ("aliases", ["ok", "bad\rone"]), ("sourceUrl", "https://a.example/\n")):
+            d = copy.deepcopy(self.good)
+            self.bot(d, "2checkout")[field] = value
+            self.assertRejected(d, "control character")
+        d = copy.deepcopy(self.good)
+        d["groups"][0]["label"] = "Search\nengines"
+        self.assertRejected(d, "control character")
+
     def test_duplicate_token_case_insensitive(self):
         d = copy.deepcopy(self.good)
         self.bot(d, "2checkout")["token"] = "gptbot"

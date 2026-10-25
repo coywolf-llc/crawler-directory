@@ -19,7 +19,8 @@ jobs:
           python-version: "3.12"
       - name: Rebuild dist from source and compare
         run: python3 scripts/build.py --check
-      - name: Validate the published list
+      - name: Validate the published list and the manifest signature
+        # scripts/ed25519.py verifies dist/v1/manifest.json.sig against keys/ed25519.json (stdlib only).
         run: python3 scripts/validate.py
       - name: Tests
         run: python3 -m unittest discover -s tests -v

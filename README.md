@@ -69,7 +69,8 @@ Every release after the seed (2026.10.25) signs the manifest with Ed25519, and C
 - **What's signed:** the exact bytes of `dist/v1/manifest.json`, as served (no parsing, no reformatting, no newline changes). The manifest carries the list's `sha256`, so a valid signature covers the list too.
 - **Signature file:** `dist/v1/manifest.json.sig`, next to the manifest. It holds the 64-byte Ed25519 signature in standard, padded base64, followed by a newline. Trim whitespace before decoding.
 - **Algorithm:** Ed25519 (RFC 8032), pure, no prehash, no context.
-- **Public key:** the raw 32-byte Ed25519 public key in base64, published below and embedded in Coywolf Pack. Its **key id** is the first 16 hex characters of the SHA-256 of those 32 bytes.
+- **Public key:** the raw 32-byte Ed25519 public key in base64, committed in [`keys/ed25519.json`](keys/ed25519.json) (`{ "algorithm": "Ed25519", "keyId", "publicKey" }`, added with the first signed release), listed below and embedded in Coywolf Pack. Its **key id** is the first 16 hex characters of the SHA-256 of those 32 bytes.
+- **Checked on every push:** `scripts/validate.py` verifies the signature against `keys/ed25519.json` (with `scripts/ed25519.py`, a standard-library implementation of RFC 8032 verification) and fails on any mismatch. Before the first signed release, when neither the key file nor a signature exists, it only warns.
 - **Key:** generated and kept on Coywolf's publishing machine (Bots Manager, `bm keys generate`); the private key never leaves it.
 
 | Key id | Public key (base64) | Since |
@@ -100,9 +101,11 @@ source/groups.json           presets: purposes, include, exclude and display ord
 source/release.json          release history; the newest entry sets the published version and date
 source/exceptions.json       validation exceptions carried over from the seed (warnings, to be fixed)
 dist/v1/                     the published files, built from source/ (never edited by hand); manifest.json.sig is added at publish
+keys/ed25519.json            the public key that signs dist/v1/manifest.json (added with the first signed release)
 schema/v1.json               JSON Schema (draft 2020-12) for dist/v1/crawler-directory.json
 scripts/build.py             builds dist/v1/ from source/
-scripts/validate.py          the checks every release must pass
+scripts/validate.py          the checks every release must pass, the manifest signature included
+scripts/ed25519.py           Ed25519 verification in pure Python (stdlib), used by validate.py
 ```
 
 Keeping Radar's data (`radar-snapshot.json`) apart from Coywolf's decisions (`curated.json`) means a Radar pull can never overwrite a verification, and a rejected bot stays rejected.
@@ -112,7 +115,7 @@ The scripts need Python 3.11 or later and nothing else:
 ```bash
 python3 scripts/build.py           # rebuild dist/v1/ from source/
 python3 scripts/build.py --check   # fail if dist/v1/ isn't what source/ produces
-python3 scripts/validate.py        # schema, unique slugs and tokens, safe tokens, sources, groups, manifest
+python3 scripts/validate.py        # schema, no control characters, unique slugs and tokens, safe tokens, sources, groups, manifest, signature
 python3 -m unittest discover -s tests
 ```
 

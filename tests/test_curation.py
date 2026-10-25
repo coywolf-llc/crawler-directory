@@ -71,3 +71,32 @@ class Curation(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ControlCharacters(unittest.TestCase):
+    def setUp(self):
+        self.tmp = Path(tempfile.mkdtemp())
+        for d in ("source", "dist", "schema"):
+            shutil.copytree(ROOT / d, self.tmp / d)
+        self.sources = build.load_sources(self.tmp)
+
+    def tearDown(self):
+        shutil.rmtree(self.tmp)
+
+    def test_build_replaces_control_characters(self):
+        self.sources["curated"]["2checkout"].update(
+            name="Two\nCheckout", operator="Veri\tfone\x00", description="Line one\r\nline two\x7f",
+            note="a\x1bb", aliases=["two\ncheckout"])
+        b = {x["slug"]: x for x in build.build_bots(self.sources)}["2checkout"]
+        self.assertEqual((b["name"], b["operator"], b["description"], b["note"], b["aliases"]),
+                         ("Two Checkout", "Veri fone ", "Line one line two", "a b", ["two checkout"]))
+        groups = self.sources["groups"]
+        groups[0]["label"] = "Search\nengines"
+        self.assertEqual(build.build_groups(groups, list({x["slug"]: x for x in build.build_bots(self.sources)}.values()))[0]["label"],
+                         "Search engines")
+
+    def test_relisted_bot_is_no_longer_delisted(self):
+        record = next(r for r in self.sources["snapshot"]["bots"] if r["slug"] == "2checkout")
+        self.sources["curated"]["2checkout"].update(delisted=True, radarRecord={k: v for k, v in record.items() if k != "slug"})
+        b = {x["slug"]: x for x in build.build_bots(self.sources)}["2checkout"]
+        self.assertNotIn("delisted", b)  # it's in the snapshot again

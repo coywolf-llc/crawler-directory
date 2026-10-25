@@ -105,8 +105,22 @@ def in_ua(token: str, uas: list[str]) -> bool:
     return any(rx.search(ua) for ua in uas)
 
 
+CONTROL_RE = re.compile(r"[\x00-\x1f\x7f]")
+
+
+def text(s: str | None) -> str:
+    """One line of text: control characters (newlines and tabs included) become spaces. Nothing else changes, so
+    the seed stays byte-identical to the list it was copied from."""
+    return CONTROL_RE.sub(" ", s or "")
+
+
+def no_controls(s: str) -> str:
+    """Remove control characters and leave everything else as it is (URLs)."""
+    return CONTROL_RE.sub("", s)
+
+
 def clip(s: str | None) -> str:
-    t = re.sub(r"\s+", " ", s or "").strip()
+    t = re.sub(r"\s+", " ", text(s)).strip()
     return t[:237].rstrip() + "…" if len(t) > 240 else t
 
 
@@ -202,26 +216,33 @@ def build_bots(sources: dict) -> list[dict]:
     curated: dict = sources["curated"]
     fetched_at = snapshot.get("fetchedAt")
     entries: list[dict] = []
+    in_snapshot = {r["slug"] for r in snapshot.get("bots", [])}
 
     def common(slug: str, record: dict, cur: dict, v: dict, origin: str) -> dict:
+        name = text(cur.get("name") or record.get("name"))
         e = {
             "slug": slug,
-            "name": cur.get("name") or record.get("name") or slug,
-            "operator": cur["operator"] if "operator" in cur else record.get("operator") or "",
+            "name": name if name.strip() else slug,
+            "operator": text(cur["operator"] if "operator" in cur else record.get("operator")),
             "category": cur.get("category") or record.get("category") or "OTHER",
             "description": clip(cur["description"] if "description" in cur else record.get("description")),
             **v,
             "origin": origin,
         }
-        if cur.get("note"):  # a note on the bot itself wins over the verification's
-            e["note"] = cur["note"]
+        if text(cur.get("note")).strip():  # a note on the bot itself wins over the verification's
+            e["note"] = text(cur["note"])
+        elif "note" in e:
+            e["note"] = text(e["note"])
+        if "sourceUrl" in e:
+            e["sourceUrl"] = no_controls(e["sourceUrl"])
         aliases = [
-            a for a in cur.get("aliases", [])
-            if a != "user_agent" and a.lower() != v["token"].lower() and not hash_like(a)
+            text(a) for a in cur.get("aliases", [])
+            if text(a).strip() and a != "user_agent" and a.lower() != v["token"].lower() and not hash_like(a)
         ]
         if aliases:
             e["aliases"] = aliases
-        if cur.get("delisted"):
+        # Only a bot Radar no longer lists is delisted: once it's back in the snapshot, the flag no longer applies.
+        if cur.get("delisted") and slug not in in_snapshot:
             e["delisted"] = True
         if cur.get("previousTokens"):
             e["previousTokens"] = cur["previousTokens"]
@@ -229,7 +250,6 @@ def build_bots(sources: dict) -> list[dict]:
 
     # A bot Radar no longer lists stays published when curated.json marks it delisted and keeps
     # its last Radar record (radarRecord); otherwise it drops out with the snapshot.
-    in_snapshot = {r["slug"] for r in snapshot.get("bots", [])}
     retained = [
         {**cur["radarRecord"], "slug": slug}
         for slug, cur in sorted(curated.items())
@@ -310,7 +330,7 @@ def build_groups(groups_src: list[dict], bots: list[dict]) -> list[dict]:
                 raise BuildError(f"groups.json {gid}: order lists {t}, which isn't a member")
         pos = {t.lower(): i for i, t in enumerate(order)}
         members.sort(key=lambda t: (0, pos[t.lower()]) if t.lower() in pos else (1, collation_key(t)))
-        entry = {**g, "tokens": members}
+        entry = {**g, "tokens": members, **{k: text(g.get(k)) for k in ("label", "phrase", "description")}}
         out.append({k: entry[k] for k in GROUP_FIELDS})
     return out
 
