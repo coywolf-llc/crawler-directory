@@ -1,0 +1,37 @@
+{
+  "$comment": "Copy of CRAWLER_GROUPS from coywolf-pack src/robots/rules.ts as of 2026-10-25 (the presets the seed release must reproduce exactly).",
+  "groups": [
+    {
+      "id": "search_engines",
+      "label": "Search engines",
+      "phrase": "search engines",
+      "description": "Google, Bing, Apple, DuckDuckGo, Yandex, Baidu and Huawei Petal Search. Blocking them removes pages from search results.",
+      "purposes": ["search-engine"],
+      "tokens": ["Googlebot", "Googlebot-Image", "Googlebot-Video", "Googlebot-News", "bingbot", "Applebot", "DuckDuckBot", "YandexBot", "Baiduspider", "PetalBot"]
+    },
+    {
+      "id": "ai_training",
+      "label": "AI training",
+      "phrase": "AI training crawlers",
+      "description": "Crawlers whose operators say they collect pages to train AI models (GPTBot, ClaudeBot, Google-Extended, CCBot, Amazonbot…). Blocking them doesn't affect search.",
+      "purposes": ["training"],
+      "tokens": ["GPTBot", "ClaudeBot", "Google-Extended", "Applebot-Extended", "CCBot", "meta-externalagent", "Bytespider", "Amazonbot", "MistralAI-Training", "Webzio-Extended"]
+    },
+    {
+      "id": "ai_search",
+      "label": "AI search and assistants",
+      "phrase": "AI search and assistant crawlers",
+      "description": "AI answer engines and assistants that fetch pages to answer questions and cite them (ChatGPT search, Perplexity, Claude…). Their operators say they don't train on them.",
+      "purposes": ["ai-search", "ai-assistant"],
+      "tokens": ["OAI-SearchBot", "Claude-SearchBot", "PerplexityBot", "Amzn-SearchBot", "MistralAI-Index", "ChatGPT-User", "Claude-User", "Perplexity-User", "meta-externalfetcher", "MistralAI-User", "DuckAssistBot", "Amzn-User"]
+    },
+    {
+      "id": "seo_tools",
+      "label": "SEO tools",
+      "phrase": "SEO tool crawlers",
+      "description": "Backlink and site-audit crawlers (Ahrefs, Semrush, Majestic, Moz…). They don't send visitors.",
+      "purposes": ["seo"],
+      "tokens": ["AhrefsBot", "SemrushBot", "MJ12bot", "DotBot", "BLEXBot", "DataForSeoBot", "Barkrowler"]
+    }
+  ]
+}

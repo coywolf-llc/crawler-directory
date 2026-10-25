@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "releases": [
+    {
+      "version": "2026.10.25",
+      "generatedAt": "2026-10-25T00:00:00Z",
+      "summary": "Seed release: an exact copy of the crawler list bundled with Coywolf Pack (694 bots, built 2026-10-04) and its four presets (search engines, AI training, AI search and assistants, SEO tools).",
+      "baseline": true,
+      "added": [],
+      "removed": [],
+      "tokenChanges": [],
+      "groupChanges": []
+    }
+  ]
+}

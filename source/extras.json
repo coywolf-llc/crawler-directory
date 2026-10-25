@@ -1,0 +1,173 @@
+{
+  "$comment": "Bots Cloudflare Radar doesn't list, maintained by hand. Same record shape as radar-snapshot.json; checkedAt dates any userAgents listed here.",
+  "bots": [
+    {
+      "slug": "amzn-user",
+      "name": "Amzn-User",
+      "operator": "Amazon",
+      "category": "AI_ASSISTANT",
+      "description": "Supports user actions such as answering Alexa queries."
+    },
+    {
+      "slug": "anthropic-ai",
+      "name": "Anthropic AI",
+      "operator": "Anthropic",
+      "category": "AI_CRAWLER",
+      "description": "Anthropic's older AI data-collection crawler (anthropic-ai)."
+    },
+    {
+      "slug": "applebot-extended",
+      "name": "Applebot-Extended",
+      "operator": "Apple",
+      "category": "AI_CRAWLER",
+      "description": "Apple's AI opt-out token controlling use of your content to train Apple's generative models. Does not affect Siri/Spotlight indexing."
+    },
+    {
+      "slug": "awariorssbot",
+      "name": "AwarioRssBot",
+      "operator": "Awario",
+      "category": "AI_CRAWLER",
+      "description": "Awario's RSS crawler for social listening and data collection."
+    },
+    {
+      "slug": "ccbot",
+      "name": "CCBot",
+      "operator": "Common Crawl",
+      "category": "AI_CRAWLER",
+      "description": "Common Crawl's bot; its public archive is widely used to train AI models."
+    },
+    {
+      "slug": "claude-web",
+      "name": "Claude-Web",
+      "operator": "Anthropic",
+      "category": "AI_CRAWLER",
+      "description": "Anthropic's Claude web crawler."
+    },
+    {
+      "slug": "cohere-ai",
+      "name": "Cohere AI",
+      "operator": "Cohere",
+      "category": "AI_CRAWLER",
+      "description": "Cohere's AI data-collection crawler."
+    },
+    {
+      "slug": "diffbot",
+      "name": "Diffbot",
+      "operator": "Diffbot",
+      "category": "AI_CRAWLER",
+      "description": "Diffbot's crawler; builds structured datasets used for AI training."
+    },
+    {
+      "slug": "facebookbot",
+      "name": "FacebookBot",
+      "operator": "Meta",
+      "category": "AI_CRAWLER",
+      "description": "Meta's crawler used to improve the language models powering its AI products."
+    },
+    {
+      "slug": "google-extended",
+      "name": "Google-Extended",
+      "operator": "Google",
+      "category": "AI_CRAWLER",
+      "description": "Google's AI opt-out token controlling use of your content for Gemini/Vertex AI training. Does not affect Search ranking."
+    },
+    {
+      "slug": "googlebot-news",
+      "name": "Googlebot-News",
+      "operator": "Google",
+      "category": "SEARCH_ENGINE_CRAWLER",
+      "description": "Crawls news articles for Google News."
+    },
+    {
+      "slug": "googleother-image",
+      "name": "GoogleOther-Image",
+      "operator": "Google",
+      "category": "OTHER",
+      "description": "GoogleOther for images: one-off crawls by Google product teams."
+    },
+    {
+      "slug": "googleother-video",
+      "name": "GoogleOther-Video",
+      "operator": "Google",
+      "category": "OTHER",
+      "description": "GoogleOther for video: one-off crawls by Google product teams."
+    },
+    {
+      "slug": "imagesiftbot",
+      "name": "ImageSift",
+      "operator": "ImageSift",
+      "category": "AI_CRAWLER",
+      "description": "ImageSift (The Hive) image crawler; collects images for AI datasets."
+    },
+    {
+      "slug": "img2dataset",
+      "name": "img2dataset",
+      "operator": "img2dataset",
+      "category": "AI_CRAWLER",
+      "description": "Bulk image scraper commonly used to assemble AI training datasets."
+    },
+    {
+      "slug": "mistralai-training",
+      "name": "MistralAI-Training",
+      "operator": "Mistral AI",
+      "category": "AI_CRAWLER",
+      "description": "Crawls web content to build datasets for training Mistral's generative AI models."
+    },
+    {
+      "slug": "omgili",
+      "name": "Omgili",
+      "operator": "Webz.io",
+      "category": "AI_CRAWLER",
+      "description": "Webz.io crawler; harvested data is resold, including for AI training."
+    },
+    {
+      "slug": "omgilibot",
+      "name": "Omgilibot",
+      "operator": "Webz.io",
+      "category": "AI_CRAWLER",
+      "description": "Webz.io crawler (Omgilibot); harvested data is resold, including for AI training."
+    },
+    {
+      "slug": "peer39_crawler",
+      "name": "Peer39 Crawler",
+      "operator": "Peer39",
+      "category": "AI_CRAWLER",
+      "description": "Peer39's advertising/AI content crawler."
+    },
+    {
+      "slug": "perplexity-user",
+      "name": "Perplexity-User",
+      "operator": "Perplexity AI",
+      "category": "AI_ASSISTANT",
+      "description": "Fetches pages when a Perplexity user asks a question about them."
+    },
+    {
+      "slug": "perplexitybot",
+      "name": "PerplexityBot",
+      "operator": "Perplexity AI",
+      "category": "AI_CRAWLER",
+      "description": "Perplexity's crawler; indexes content for its AI answer engine."
+    },
+    {
+      "slug": "timpibot",
+      "name": "Timpibot",
+      "operator": "Timpi",
+      "category": "AI_CRAWLER",
+      "description": "Timpi's crawler; collects data for its search/AI index."
+    },
+    {
+      "slug": "webzio",
+      "name": "Webzio",
+      "operator": "Webz.io",
+      "category": "AGGREGATOR",
+      "description": "Webz.io's crawler that collects and structures web content."
+    },
+    {
+      "slug": "webzio-extended",
+      "name": "Webzio-Extended",
+      "operator": "Webz.io",
+      "category": "AI_CRAWLER",
+      "description": "Webz.io AI opt-out token controlling use of harvested data for AI training."
+    }
+  ]
+}

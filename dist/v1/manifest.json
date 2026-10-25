@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "version": "2026.10.25",
+  "generatedAt": "2026-10-25T00:00:00Z",
+  "file": "crawler-directory.json",
+  "bytes": 273593,
+  "sha256": "6221fe179eaef70d9898e291de78c0333506f71039f57eb11aab5edb4d7d545a",
+  "counts": {
+    "bots": 694,
+    "verified": 562,
+    "verifiedOperatorDocs": 143,
+    "verifiedUserAgent": 419,
+    "unverified": 132,
+    "groups": 4
+  }
+}

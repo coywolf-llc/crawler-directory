@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/coywolf-llc/crawler-directory/main/schema/v1.json",
+  "title": "Crawler directory, format version 1",
+  "description": "dist/v1/crawler-directory.json: robots.txt crawler tokens with how each was verified, plus presets (groups). Within v1, fields are only ever added; consumers should ignore fields they don't know.",
+  "type": "object",
+  "required": ["schemaVersion", "version", "generatedAt", "bots", "groups"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "version": {
+      "description": "Date-based release version, with .2, .3… for further releases on the same day.",
+      "type": "string",
+      "pattern": "^\\d{4}\\.\\d{2}\\.\\d{2}(\\.\\d+)?$"
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$"
+    },
+    "bots": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 5000,
+      "items": { "$ref": "#/$defs/bot" }
+    },
+    "groups": {
+      "type": "array",
+      "maxItems": 50,
+      "items": { "$ref": "#/$defs/group" }
+    }
+  },
+  "$defs": {
+    "token": {
+      "description": "A robots.txt product token (the User-agent: value). Never *.",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*$"
+    },
+    "slug": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*$"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "url": {
+      "type": "string",
+      "maxLength": 2000,
+      "pattern": "^https?://"
+    },
+    "purpose": {
+      "enum": ["training", "ai-search", "ai-assistant", "search-engine", "seo", "other"]
+    },
+    "bot": {
+      "type": "object",
+      "required": ["slug", "name", "operator", "category", "description", "token", "status", "evidence", "origin"],
+      "additionalProperties": false,
+      "properties": {
+        "slug": { "$ref": "#/$defs/slug" },
+        "name": { "type": "string", "minLength": 1, "maxLength": 200 },
+        "operator": { "type": "string", "maxLength": 200 },
+        "category": {
+          "description": "Cloudflare Radar category, for example AI_CRAWLER.",
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64,
+          "pattern": "^[A-Z][A-Z0-9_]*$"
+        },
+        "purpose": { "$ref": "#/$defs/purpose" },
+        "description": { "type": "string", "maxLength": 240 },
+        "token": { "$ref": "#/$defs/token" },
+        "aliases": {
+          "type": "array",
+          "maxItems": 50,
+          "items": { "type": "string", "minLength": 1, "maxLength": 200 }
+        },
+        "status": { "enum": ["verified", "unverified"] },
+        "evidence": {
+          "description": "operator-docs: the operator's documentation names the token. user-agent: the token appears in the bot's published user-agent string. heuristic: derived from a pattern or name. none: checked, and the operator doesn't document it.",
+          "enum": ["operator-docs", "user-agent", "heuristic", "none"]
+        },
+        "sourceUrl": { "$ref": "#/$defs/url" },
+        "verifiedAt": { "$ref": "#/$defs/date" },
+        "note": { "type": "string", "maxLength": 1000 },
+        "origin": {
+          "description": "radar: listed in Cloudflare Radar's bot directory. curated: an operator-documented bot Radar doesn't list.",
+          "enum": ["radar", "curated"]
+        },
+        "radarSeenAt": { "$ref": "#/$defs/date" },
+        "delisted": { "type": "boolean" },
+        "mergedSlugs": {
+          "description": "Other Radar slugs that share this token and were merged into this entry.",
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/slug" }
+        },
+        "previousTokens": {
+          "description": "Tokens this bot used before, so a rule naming an old token can be mapped to the current one.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["token", "until"],
+            "additionalProperties": false,
+            "properties": {
+              "token": { "$ref": "#/$defs/token" },
+              "until": { "$ref": "#/$defs/date" }
+            }
+          }
+        }
+      }
+    },
+    "group": {
+      "type": "object",
+      "required": ["id", "label", "phrase", "description", "purposes", "tokens"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z][a-z0-9_]*$", "maxLength": 64 },
+        "label": { "type": "string", "minLength": 1, "maxLength": 100 },
+        "phrase": { "type": "string", "minLength": 1, "maxLength": 100 },
+        "description": { "type": "string", "maxLength": 500 },
+        "purposes": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/purpose" }
+        },
+        "tokens": {
+          "type": "array",
+          "maxItems": 500,
+          "items": { "$ref": "#/$defs/token" }
+        }
+      }
+    }
+  }
+}

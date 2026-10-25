@@ -1,0 +1,31 @@
+{
+  "$comment": "Known validation exceptions carried over from the seed. scripts/validate.py reports these as warnings instead of errors; remove an entry once it's fixed. Don't add new ones.",
+  "verifiedWithoutHttpsSource": {
+    "addsearchbot": "Seeded from coywolf-pack's bots.json with an http source; re-check and add an https source.",
+    "ahrefsbot": "Seeded from coywolf-pack's bots.json with an http source; re-check and add an https source.",
+    "awariorssbot": "Seeded from coywolf-pack's bots.json with no source URL (verified from Radar's user-agent string); add the operator's page.",
+    "baidu-ads": "Seeded from coywolf-pack's bots.json with no source URL (verified from Radar's user-agent string); add the operator's page.",
+    "blexbot": "Seeded from coywolf-pack's bots.json with an http source; re-check and add an https source.",
+    "cloudflare-diagnostics": "Seeded from coywolf-pack's bots.json with no source URL (verified from Radar's user-agent string); add the operator's page.",
+    "cloudflare-purge": "Seeded from coywolf-pack's bots.json with no source URL (verified from Radar's user-agent string); add the operator's page.",
+    "cloudflare-robots-api": "Seeded from coywolf-pack's bots.json with no source URL (verified from Radar's user-agent string); add the operator's page.",
+    "cloudflare-ssl-detector": "Seeded from coywolf-pack's bots.json with no source URL (verified from Radar's user-agent string); add the operator's page.",
+    "cloudflare-traffic-manager": "Seeded from coywolf-pack's bots.json with no source URL (verified from Radar's user-agent string); add the operator's page.",
+    "cloudflarecsup": "Seeded from coywolf-pack's bots.json with no source URL (verified from Radar's user-agent string); add the operator's page.",
+    "coccocbot": "Seeded from coywolf-pack's bots.json with an http source; re-check and add an https source.",
+    "datenbank": "Seeded from coywolf-pack's bots.json with an http source; re-check and add an https source.",
+    "diffbot": "Seeded from coywolf-pack's bots.json with no source URL (verified from Radar's user-agent string); add the operator's page.",
+    "feedotter": "Seeded from coywolf-pack's bots.json with an http source; re-check and add an https source.",
+    "ias-crawler": "Seeded from coywolf-pack's bots.json with an http source; re-check and add an https source.",
+    "img2dataset": "Seeded from coywolf-pack's bots.json with no source URL (verified from Radar's user-agent string); add the operator's page.",
+    "peer39_crawler": "Seeded from coywolf-pack's bots.json with no source URL (verified from Radar's user-agent string); add the operator's page.",
+    "quantcastbot": "Seeded from coywolf-pack's bots.json with an http source; re-check and add an https source.",
+    "shopify-captain-hook": "Seeded from coywolf-pack's bots.json with no source URL (verified from Radar's user-agent string); add the operator's page.",
+    "sitelock": "Seeded from coywolf-pack's bots.json with an http source; re-check and add an https source.",
+    "telegrambot": "Seeded from coywolf-pack's bots.json with no source URL (verified from Radar's user-agent string); add the operator's page.",
+    "timpibot": "Seeded from coywolf-pack's bots.json with no source URL (verified from Radar's user-agent string); add the operator's page.",
+    "uptimebot": "Seeded from coywolf-pack's bots.json with no source URL (verified from Radar's user-agent string); add the operator's page.",
+    "uptimerobot": "Seeded from coywolf-pack's bots.json with an http source; re-check and add an https source.",
+    "zumbot": "Seeded from coywolf-pack's bots.json with an http source; re-check and add an https source."
+  }
+}

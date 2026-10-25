@@ -1,0 +1,6197 @@
+{
+  "$comment": "Coywolf's decisions per slug (successor of coywolf-pack src/robots/data/verified.json). token pins the robots.txt token; verification pins status/evidence/sourceUrl/verifiedAt/note (verified, or unverified with evidence none); purpose records what the bot is for, with its source; category overrides Radar's; exclude drops a bot (with a reason); aliases, previousTokens, delisted and reviewDecisions as named. Sorted by slug.",
+  "bots": {
+    "2checkout": {
+      "token": "2checkout"
+    },
+    "360monitoring": {
+      "token": "monitoring360bot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://docs.360monitoring.com/docs/monitoring-bot-and-cloudflare-settings",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "monitoring360"
+      ]
+    },
+    "aasa": {
+      "token": "AASA-Bot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://developer.apple.com/library/archive/documentation/General/Conceptual/AppSearch/UniversalLinks.html",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "accessible-web-bot": {
+      "token": "AccessibleWebBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://accessibleweb.com",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "HeadlessChrome"
+      ]
+    },
+    "accesssparkbot": {
+      "token": "AccessSparkBot"
+    },
+    "accessstatus": {
+      "token": "AccessStatus",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.accesslink.fr/page/a-propos-de-accessstatus",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "acquia-optimize-monsido": {
+      "token": "Monsidobot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://docs.acquia.com/acquia-optimize/getting-started/data-hosting-and-security",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "activecomply-bot": {
+      "token": "ActiveComply",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://app.activecomply.com/bot",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "adagiobot": {
+      "token": "Adagiobot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://adagio.io",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "addsearchbot": {
+      "token": "AddSearchBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "http://www.addsearch.com/bot",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "addthis": {
+      "token": "AddThis",
+      "aliases": [
+        "AddThis.com"
+      ]
+    },
+    "adidxbot": {
+      "token": "adidxbot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://www.bing.com/webmasters/help/which-crawlers-does-bing-use-8c184ec0",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "adsensor-2": {
+      "token": "AdSensorBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://adsensor.ru",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "adstxtcrawler": {
+      "token": "AdsTxtCrawler",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.onetag.com",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "InteractiveAdvertisingBureau"
+      ]
+    },
+    "advailo-kuma": {
+      "token": "Advailo"
+    },
+    "advallybot-2": {
+      "token": "AdvallyBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://advally.com/advallybot",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "adyen": {
+      "token": "Adyen",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://docs.adyen.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "aftership-magento-2": {
+      "token": "AfterShip"
+    },
+    "agency-analytics-crawler": {
+      "token": "RSiteAuditor"
+    },
+    "agencytoolspro-uptime-monitoring-bot": {
+      "token": "AgencyToolsPro"
+    },
+    "agi-agent-2": {
+      "token": "AGIAgent",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://www.theagi.company/agent",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "ahrefsbot": {
+      "token": "AhrefsBot",
+      "purpose": {
+        "purpose": "seo",
+        "sourceUrl": "https://ahrefs.com/robot",
+        "note": "Ahrefs backlink index.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "http://ahrefs.com/robot/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "ahrefssiteaudit": {
+      "token": "AhrefsSiteAudit",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://ahrefs.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "ai-search-external": {
+      "token": "Cloudflare-AI-Search-External",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://developers.cloudflare.com/ai-search/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "airsoftdbbot-2": {
+      "token": "AirsoftdbBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.airsoftdb.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "airwallex-website-scanner": {
+      "token": "AirwallexWebsiteScanner",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.airwallex.com/docs/connected-accounts/onboarding/the-airwallex-website-scanner",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "akismet": {
+      "token": "Akismet"
+    },
+    "alertsite": {
+      "token": "AlertSite",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://support.smartbear.com/alertsite/docs/monitors/index.html",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "algolia": {
+      "token": "Algolia"
+    },
+    "allafrica-crawler": {
+      "token": "AllAfrica",
+      "aliases": [
+        "NewsBot"
+      ]
+    },
+    "alli-ai-bot": {
+      "token": "AlliAI",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.alliai.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "alphalens-bot": {
+      "token": "alphalens-bot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://alphalensbot.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "amazon-bedrock-agentcore-browser-ap-northeast-1": {
+      "token": "bedrockbot"
+    },
+    "amazon-bedrock-agentcore-browser-ap-south-1": {
+      "token": "bedrockbot"
+    },
+    "amazon-bedrock-agentcore-browser-ap-southeast-1": {
+      "token": "bedrockbot"
+    },
+    "amazon-bedrock-agentcore-browser-ap-southeast-2": {
+      "token": "bedrockbot"
+    },
+    "amazon-bedrock-agentcore-browser-eu-central-1": {
+      "token": "bedrockbot"
+    },
+    "amazon-bedrock-agentcore-browser-eu-west-1": {
+      "token": "bedrockbot"
+    },
+    "amazon-bedrock-agentcore-browser-us-east": {
+      "token": "bedrockbot"
+    },
+    "amazon-bedrock-agentcore-browser-us-east-2": {
+      "token": "bedrockbot"
+    },
+    "amazon-bedrock-agentcore-browser-us-west": {
+      "token": "bedrockbot"
+    },
+    "amazon-bot": {
+      "token": "Amazonbot",
+      "purpose": {
+        "purpose": "training",
+        "sourceUrl": "https://developer.amazon.com/amazonbot",
+        "note": "Amazon: Amazonbot content “may be used to train Amazon AI models”.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developer.amazon.com/amazonbot",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "amazon-buyforme": {
+      "token": "AmazonBuyForMe"
+    },
+    "amazon-contxtbot": {
+      "token": "contxbot"
+    },
+    "amazon-kendra": {
+      "token": "amazon-kendra",
+      "aliases": [
+        "amazon-kendra-web-crawler",
+        "amazon-kendra-"
+      ]
+    },
+    "amazonadbot": {
+      "token": "AmazonAdBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://adbot.amazon.com/index.html",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "amzn-searchbot": {
+      "token": "Amzn-SearchBot",
+      "purpose": {
+        "purpose": "ai-search",
+        "sourceUrl": "https://developer.amazon.com/amazonbot",
+        "note": "Amazon search experiences (Alexa, Rufus); not used for training.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developer.amazon.com/amazonbot",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "amzn-user": {
+      "token": "Amzn-User",
+      "purpose": {
+        "purpose": "ai-assistant",
+        "sourceUrl": "https://developer.amazon.com/amazonbot",
+        "note": "Fetches pages for Alexa user requests.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developer.amazon.com/amazonbot",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "anchor-browser": {
+      "token": "Anchor",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://docs.anchorbrowser.io/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "anthropic-ai": {
+      "token": "anthropic-ai",
+      "purpose": {
+        "purpose": "other",
+        "sourceUrl": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler",
+        "note": "Legacy token; not in Anthropic's current documentation.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "unverified",
+        "evidence": "none",
+        "note": "Legacy Anthropic token; not in Anthropic's current crawler documentation (ClaudeBot, Claude-User, Claude-SearchBot)."
+      }
+    },
+    "apify-website-content-crawler": {
+      "token": "ApifyWebsiteContentCrawler",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://apify.com/apify/website-content-crawler",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "appcastbot": {
+      "token": "AppcastParsingBot"
+    },
+    "apple": {
+      "token": "Applebot",
+      "purpose": {
+        "purpose": "search-engine",
+        "sourceUrl": "https://support.apple.com/en-us/119829",
+        "note": "Applebot powers Spotlight, Siri and Safari search.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://support.apple.com/en-us/119829",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "applebot-extended": {
+      "token": "Applebot-Extended",
+      "purpose": {
+        "purpose": "training",
+        "sourceUrl": "https://support.apple.com/en-us/119829",
+        "note": "Apple: Applebot-Extended controls use of content to train Apple's foundation models.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://support.apple.com/en-us/119829",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "arachnid-shield-api": {
+      "token": "Arachnid",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://projectarachnid.com/en/#shield",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "archive-org-bot": {
+      "token": "archive.org_bot"
+    },
+    "area-360": {
+      "token": "A360-Search",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://area360.uk",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "arena-bot": {
+      "token": "ArenaBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://arena.im",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "arquivo": {
+      "token": "Arquivo-web-crawler",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://sobre.arquivo.pt/en/help/crawling-and-archiving-web-content/",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "heritrix"
+      ]
+    },
+    "arrow-monitor": {
+      "token": "ArrowMonitor",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://monitor.arrow-web.dev/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "artemis-web-reader": {
+      "token": "artemis"
+    },
+    "artsdata-crawler": {
+      "token": "artsdata-crawler",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://kg.artsdata.ca",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "atlassian-bot": {
+      "token": "atlassian-bot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://support.atlassian.com/organization-administration/docs/connect-custom-website-to-rovo/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "attracta": {
+      "token": "Attracta",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.attracta.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "audisto-crawler": {
+      "token": "audisto",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://audisto.com/bot",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "audisto-essential"
+      ]
+    },
+    "authory": {
+      "token": "Authory",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://authory.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "automated-web-testing": {
+      "token": "GhostInspector",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://ghostinspector.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "automaton": {
+      "token": "AutomatonHeadlessChrome"
+    },
+    "automattic-tumblr": {
+      "token": "Tumblr",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://automattic.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "awario": {
+      "token": "AwarioSmartBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://awario.com/bots.html",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "AwarioRssBot",
+        "AwarioBot",
+        "Awario"
+      ]
+    },
+    "awariorssbot": {
+      "token": "AwarioRssBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "verifiedAt": "2026-10-04"
+      }
+    },
+    "babbar-barkrowler": {
+      "token": "Barkrowler",
+      "purpose": {
+        "purpose": "seo",
+        "sourceUrl": "https://babbar.tech/crawler",
+        "note": "Babbar SEO index.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://babbar.tech/crawler",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "baidu": {
+      "token": "Baiduspider",
+      "purpose": {
+        "purpose": "search-engine",
+        "sourceUrl": "https://help.baidu.com/question?prod_id=99&class=476&id=2996",
+        "note": "Baidu search.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://help.baidu.com/question?prod_id=99&class=476&id=2996",
+        "verifiedAt": "2026-10-03"
+      },
+      "aliases": [
+        "Baiduspider-render"
+      ]
+    },
+    "baidu-ads": {
+      "token": "Baidu-ADS",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "bazqux": {
+      "token": "BazQux",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://bazqux.com/fetcher",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "bestchange-bot": {
+      "token": "BestChange"
+    },
+    "better-uptime": {
+      "token": "BetterUptime",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://betteruptime.com/faq",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "bibliotheque-nacional-de-france": {
+      "token": "bnf.fr_bot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https:// https://www.bnf.fr",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "big-sur-ai": {
+      "token": "bigsur.ai"
+    },
+    "bigscootsmonitor": {
+      "token": "BigScootsMonitor",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://monitor.bigscoots.dev",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "bigupdatabot": {
+      "token": "BigUpDataBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://bigupdata.co.uk/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "binarycanary": {
+      "token": "Chirp"
+    },
+    "bing": {
+      "token": "bingbot",
+      "purpose": {
+        "purpose": "search-engine",
+        "sourceUrl": "https://www.bing.com/webmasters/help/which-crawlers-does-bing-use-8c184ec0",
+        "note": "Bing search.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://www.bing.com/webmasters/help/which-crawlers-does-bing-use-8c184ec0",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "bingpreview": {
+      "token": "BingPreview",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.bing.com/webmaster/help/which-crawlers-does-bing-use-8c184ec0",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "IEMobile"
+      ]
+    },
+    "bitbucket": {
+      "token": "Bitbucket-Webhooks",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://support.atlassian.com/bitbucket-cloud/docs/what-are-the-bitbucket-cloud-ip-addresses-i-should-use-to-configure-my-corporate-firewall/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "black-duck-fast-dynamic": {
+      "token": "FastDAST"
+    },
+    "blexbot": {
+      "token": "BLEXBot",
+      "purpose": {
+        "purpose": "seo",
+        "sourceUrl": "http://webmeup.com/",
+        "note": "WebMeUp backlink index.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "http://webmeup.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "bling-erp": {
+      "token": "BlingERP"
+    },
+    "blockaid": {
+      "token": "36b1546a5700e52eb2972b3f92b314fa"
+    },
+    "blogtrottr": {
+      "token": "Blogtrottr",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://blogtrottr.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "blogvault": {
+      "token": "BlogVault",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://blogvault.net/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "bluesky-app": {
+      "token": "Bluesky",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://blueskyweb.xyz/ ",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "Cardyb"
+      ]
+    },
+    "boardgameprices-bot": {
+      "token": "BoardGamePrices"
+    },
+    "boneybadgerbot": {
+      "token": "Honeybadger",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.honeybadger.io",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "borderxbot-2": {
+      "token": "BorderxBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.nubestore.ai",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "botify": {
+      "token": "botify",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.botify.com/platform/botify-analytics/sitecrawler",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "bravebot": {
+      "token": "Bravebot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://safe.search.brave.com/help/brave-search-crawler",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "brightedgebot": {
+      "token": "BrightEdge",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://support.brightedge.com/hc/en-us/articles/31090803710349-BrightEdge-Crawler-User-Agent",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "browserbase": {
+      "token": "Browserbase"
+    },
+    "brynson-compliance-bot": {
+      "token": "BrynsonComplianceBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://brynson.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "bufferlinkpreviewbot": {
+      "token": "BufferLinkPreviewBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://scraper.buffer.com/about/bots/link-preview-bot",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "bugsnag": {
+      "token": "BugsNag"
+    },
+    "builtwith": {
+      "token": "BuiltWith",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://builtwith.com/biup",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "bushbaby": {
+      "token": "bushbaby"
+    },
+    "buttondown-rss-feed-parser": {
+      "token": "Buttondown",
+      "aliases": [
+        "RSS-Feed-Parser"
+      ]
+    },
+    "bytedance-toutiao": {
+      "token": "Bytespider",
+      "purpose": {
+        "purpose": "training",
+        "sourceUrl": "https://zhanzhang.toutiao.com/docs/intro/26899",
+        "note": "ByteDance's crawler; widely documented as collecting data for its LLMs (Doubao).",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://zhanzhang.toutiao.com/docs/intro/26899",
+        "verifiedAt": "2026-10-03",
+        "note": "ByteDance's webmaster docs (zhanzhang.toutiao.com) aren't reachable outside China; every Bytespider user agent carries the token, and ByteDance's docs instruct `User-agent: Bytespider`."
+      },
+      "aliases": [
+        "zhanzhang.toutiao.com"
+      ]
+    },
+    "caliperbot": {
+      "token": "Caliperbot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.conductor.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "capitalonebot": {
+      "token": "CapitalOneBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.capitalone.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "cartai-agentic-commerce-as-a-service": {
+      "token": "CartAIBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://docs.cartai.ai/docs/introduction",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "catchpoint": {
+      "token": "Catchpoint",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.catchpoint.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "ccbot": {
+      "token": "CCBot",
+      "purpose": {
+        "purpose": "training",
+        "sourceUrl": "https://commoncrawl.org/ccbot",
+        "note": "Common Crawl's open web archive is a primary source of LLM training data.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://commoncrawl.org/ccbot",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "cert-chief": {
+      "token": "CertChief",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://cert.chief.app",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "cf-digicert-dcv": {
+      "token": "DigiCert",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://datadome.co/bots/cloudflare-digicert-dcv/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "channable-importer": {
+      "token": "channable"
+    },
+    "channel3bot": {
+      "token": "Channel3Bot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://trychannel3.com/channel3bot",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "Channel3"
+      ]
+    },
+    "chargebee": {
+      "token": "ChargeBee",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.chargebee.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "chatgpt-agent": {
+      "exclude": {
+        "reason": "Signs its requests (Web Bot Auth); OpenAI documents no robots.txt token of its own."
+      }
+    },
+    "chatgpt-user": {
+      "token": "ChatGPT-User",
+      "purpose": {
+        "purpose": "ai-assistant",
+        "sourceUrl": "https://developers.openai.com/api/docs/bots",
+        "note": "Fetches pages when ChatGPT users ask.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.openai.com/api/docs/bots",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "chathive-crawler": {
+      "token": "ChathiveCrawler",
+      "aliases": [
+        "OnirocoCrawler"
+      ]
+    },
+    "check-host-cc-monitoring": {
+      "token": "check-host.cc",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://check-host.cc",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "checkly": {
+      "token": "Checkly",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https:// https://www.checklyhq.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "checkthecal": {
+      "token": "CheckTheCal",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://checkthecal.com/bot",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "checkview-24": {
+      "token": "CheckView",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://checkview.io/docs/how-to-whitelist-checkview-ips-in-cloudflare/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "chrome-lighthouse": {
+      "token": "Chrome-Lighthouse",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://developers.google.com/web/tools/lighthouse",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "citibotsitecrawler": {
+      "token": "CitibotSiteCrawler",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.citibot.io/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "claude-anthropic": {
+      "token": "ClaudeBot",
+      "purpose": {
+        "purpose": "training",
+        "sourceUrl": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler",
+        "note": "Anthropic: ClaudeBot collects web content that could contribute to model training.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "claude-searchbot": {
+      "token": "Claude-SearchBot",
+      "purpose": {
+        "purpose": "ai-search",
+        "sourceUrl": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler",
+        "note": "Improves Claude's search results.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "claude-user": {
+      "token": "Claude-User",
+      "purpose": {
+        "purpose": "ai-assistant",
+        "sourceUrl": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler",
+        "note": "Fetches pages when Claude users ask.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "claude-web": {
+      "token": "Claude-Web",
+      "verification": {
+        "status": "unverified",
+        "evidence": "none",
+        "note": "Legacy Anthropic token; not in Anthropic's current crawler documentation."
+      }
+    },
+    "cledara-saas-management-agent": {
+      "token": "CledaraBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.cledara.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "clickagy": {
+      "token": "Clickagy"
+    },
+    "cloudflare-agent-readiness": {
+      "token": "Cloudflare-AgentReadiness",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://web-bot-auth.chambers.cfdata.org/",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "cloudflare-ai-search": {
+      "token": "Cloudflare-AI-Search",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.cloudflare.com/ai-search",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "cloudflare-browser-rendering": {
+      "token": "Cloudflare-Traffic"
+    },
+    "cloudflare-browser-rendering-crawler": {
+      "token": "CloudflareBrowserRenderingCrawler",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.cloudflare.com/browser-run/reference/robots-txt/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "cloudflare-chv": {
+      "token": "Cloudflare"
+    },
+    "cloudflare-collapsify": {
+      "token": "Collapsify"
+    },
+    "cloudflare-customerslo-prober": {
+      "token": "Cloudflare"
+    },
+    "cloudflare-diagnostics": {
+      "token": "CloudflareDiagnostics",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "Cloudflare-diagnostics"
+      ]
+    },
+    "cloudflare-health-checks": {
+      "token": "Cloudflare-Healthchecks",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.cloudflare.com/fundamentals/reference/cloudflare-site-crawling/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "cloudflare-observatory-curly": {
+      "token": "curly-"
+    },
+    "cloudflare-prefetch": {
+      "token": "CloudFlare-Prefetch",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.cloudflare.com/fundamentals/reference/cloudflare-site-crawling/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "cloudflare-purge": {
+      "token": "Cloudflare-Purge",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "cloudflare-radar-url-scanner": {
+      "token": "Cloudflare"
+    },
+    "cloudflare-robots-api": {
+      "token": "CloudflareRobotsAPI",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "cloudflare-speedtest": {
+      "token": "Cloudflare"
+    },
+    "cloudflare-ssl-detector": {
+      "token": "Cloudflare-SSLDetector",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "cloudflare-stream-webhook": {
+      "token": "Cloudflare"
+    },
+    "cloudflare-traffic-manager": {
+      "token": "Cloudflare-Traffic-Manager",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "cloudflare-validator": {
+      "token": "Cloudflare-Validator",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.cloudflare.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "cloudflare-web-scanner": {
+      "token": "CloudflareWebScanner",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.cloudflare.com/ai-crawl-control",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "cloudflarecsup": {
+      "token": "cloudflare-csup",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "cloudtrellis": {
+      "token": "Cloudtrellis",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.cloudtrellis.com/robot",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "cludobot": {
+      "token": "cludo.com",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.cludo.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "cmu-cylab": {
+      "token": "CMU-Cylab",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://epp-jcalandr-01.andrew.cmu.edu/about.html",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "coccocbot": {
+      "token": "coccocbot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "http://help.coccoc.com/searchengine",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "coccocbot-fast",
+        "coccocbot-image",
+        "coccocbot-web"
+      ]
+    },
+    "cognitiveseo": {
+      "token": "JamesBOT"
+    },
+    "cohere-ai": {
+      "token": "cohere-ai",
+      "verification": {
+        "status": "unverified",
+        "evidence": "none",
+        "note": "Cohere says it does not crawl for training and documents no token (its example uses a hypothetical Coherebot)."
+      }
+    },
+    "coinbase": {
+      "token": "weipay-webhooks",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://commerce.coinbase.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "consentcheck": {
+      "token": "ConsentCheckBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://consentcheck.site/",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "consentcheck"
+      ]
+    },
+    "content-square-speed-analysis": {
+      "token": "CSpeedTP",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://contentsquare.com/platform/capabilities/speed-analysis/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "contentking": {
+      "token": "ContentKing",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://www.contentkingapp.com/support/robots-txt-monitoring/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "contentsquare-static-resource-scraper": {
+      "token": "ContentSquare"
+    },
+    "contextualbot": {
+      "token": "ContextualBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.outcomes.net/contextual-intelligence",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "convermaxbot": {
+      "token": "Convermax",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://docs.convermax.com/indexer/",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "ConvermaxBot"
+      ]
+    },
+    "cookie-hub": {
+      "token": "CookieHub",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.cookiehub.com",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "CookieHubScan",
+        "CookieHubVerify"
+      ]
+    },
+    "cookiebot": {
+      "token": "Cookiebot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.cookiebot.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "cookiemaestro": {
+      "token": "cookie-maestro",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://www.cookiemaestro.com/documentatie/limit-cookie-maestro-using-robots-txt",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "cookieyesbot": {
+      "token": "CookieYesbot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://www.cookieyes.com/documentation/cookieyesbot",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "coostibot": {
+      "token": "CoostiBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://coosti.dk",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "cotoyogi": {
+      "token": "Cotoyogi",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://ds.rois.ac.jp/center8/crawler/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "coveobot": {
+      "token": "Coveobot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://platform.cloud.coveo.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "cozi-icalendar": {
+      "token": "Cozi-iCalendar-FeedReader",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://ourfamilywizard.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "crawlson": {
+      "token": "Crawlson",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.crawlson.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "crazy-egg-bot": {
+      "token": "Crazy"
+    },
+    "creobot": {
+      "token": "Creobot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://help.creoline.com/de/doc/content-delivery-network-igg0Tq661V",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "criteobot": {
+      "token": "CriteoBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://www.criteo.com/criteo-crawler/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "criticalcssbot": {
+      "token": "Criticalcss.com",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://criticalcss.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "cronjob": {
+      "token": "cron-job.org"
+    },
+    "cutestat-2": {
+      "token": "CuteStat",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.cutestat.com/bot",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "cxensebot": {
+      "token": "cXensebot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.cxense.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "cybaa-bot": {
+      "token": "CybaaBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://cybaa.io/bot-policy",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "cyclr": {
+      "token": "cyclr.com",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://cyclr.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "daric2": {
+      "token": "Cloudflare-Crawler",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.cloudflare.com/ai-crawl-control/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "daric3": {
+      "token": "Cloudflare-Crawler"
+    },
+    "daric4": {
+      "token": "Cloudflare-Crawler"
+    },
+    "datadog-synthetic-bot": {
+      "token": "DatadogSynthetics",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://docs.datadoghq.com/synthetics/guide/identify_synthetics_bots/",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "Datadog"
+      ]
+    },
+    "dataforseo-bot": {
+      "token": "DataForSeoBot",
+      "purpose": {
+        "purpose": "seo",
+        "sourceUrl": "https://dataforseo.com/dataforseo-bot",
+        "note": "DataForSEO.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://dataforseo.com/dataforseo-bot",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "dataforseo-siteauditor": {
+      "token": "RSiteAuditor",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://dataforseo.com/help-center/troubleshooting-onpage-api",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "dataprovider-com": {
+      "token": "Dataprovider.com",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.dataprovider.com/spider/",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "Dataprovider"
+      ]
+    },
+    "datenbank": {
+      "token": "netEstate",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "http://www.website-datenbank.de/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "daum": {
+      "token": "Daum",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://cs.daum.net/faq/15/4118.html?faqId=28966",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "deadlinkchecker": {
+      "token": "deadlinkchecker",
+      "aliases": [
+        "www.deadlinkchecker.com"
+      ]
+    },
+    "deepcrawl": {
+      "token": "lumar",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://www.lumar.io/spdr/",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "deepcrawl",
+        "deepcrawl.com"
+      ]
+    },
+    "dentalpresence-audit-bot": {
+      "token": "DentalPresenceAuditBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://dentalpresence.in",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "detectify": {
+      "token": "Detectify",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://detectify.com/what-is-detectify",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "determ": {
+      "token": "Mediatoolkitbot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.determ.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "devin": {
+      "token": "Devin"
+    },
+    "diffbot": {
+      "token": "Diffbot",
+      "purpose": {
+        "purpose": "other",
+        "sourceUrl": "https://www.diffbot.com/docs/crawl/faq/robots-txt",
+        "note": "Diffbot: “does not crawl pages for training generative AI foundation models.”",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "verifiedAt": "2026-10-04"
+      }
+    },
+    "digicert-dcv": {
+      "token": "DigiCert"
+    },
+    "digiflazz-webhook": {
+      "token": "Digiflazz-Hookshot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://digiflazz.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "direqt-anomura": {
+      "token": "Anomura",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://docs.direqt-search.com/direqt-bots/direqt-crawlers-and-user-agents",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "discord-bot": {
+      "token": "Discordbot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://discord.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "dlvr-it-feed-fetcher": {
+      "token": "dlvr.it",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://dlvr.it",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "dnsnifferbot": {
+      "token": "DNSnifferBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://dnsniffer.com/crawler",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "dotbot": {
+      "token": "DotBot",
+      "purpose": {
+        "purpose": "seo",
+        "sourceUrl": "https://moz.com/link-explorer",
+        "note": "Moz link index.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://moz.com/link-explorer",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "dotcom-monitor": {
+      "token": "DMBrowser",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.dotcom-monitor.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "doubleverify": {
+      "token": "Leikibot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.doubleverify.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "drata": {
+      "token": "Dratabot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://drata.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "drlinkcheck": {
+      "token": "Dlc"
+    },
+    "drugcardbot": {
+      "token": "DrugCardBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://drug-card.io/drug-card-bot-info.txt",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "duckassistbot": {
+      "token": "DuckAssistBot",
+      "purpose": {
+        "purpose": "ai-assistant",
+        "sourceUrl": "https://duckduckgo.com/duckduckgo-help-pages/results/duckassistbot",
+        "note": "DuckDuckGo's AI-assisted answers.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://duckduckgo.com/duckduckgo-help-pages/results/duckassistbot",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "duckduckbot": {
+      "token": "DuckDuckBot",
+      "purpose": {
+        "purpose": "search-engine",
+        "sourceUrl": "https://duckduckgo.com/duckduckgo-help-pages/results/duckduckbot",
+        "note": "DuckDuckGo search.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://duckduckgo.com/duckduckgo-help-pages/results/duckduckbot",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "eRepublik-tools": {
+      "token": "eRepublik.tools",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://erepublik.tools",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "easybill-import-manager": {
+      "token": "easybill-ImportManager",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.easybill.de/api/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "easycron": {
+      "token": "EasyCron",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.easycron.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "easydns": {
+      "token": "easyDNS"
+    },
+    "easyscan": {
+      "token": "EasyScan",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.it-recht-kanzlei.de/website-scanner-fuer-mandanten.php",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "echoboxbot": {
+      "token": "EchoboxBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.echobox.com/",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "w4mwnpbXf3MFAbxOkJRw"
+      ]
+    },
+    "echofeed": {
+      "token": "EchoFeed",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://echofeed.app",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "element451bot": {
+      "token": "Element451Bot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://element451.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "elmahio-uptimebot": {
+      "token": "elmahio-uptimebot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://elmah.io",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "elsa-ccn-cert": {
+      "token": "ELSA-CCNCERT-scanner",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.ccn-cert.cni.es/es/soluciones-seguridad/elsa.html",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "embedly": {
+      "token": "Embedly",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://embed.ly",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "emoneybot": {
+      "token": "eMoneyBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://emoneyadvisor.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "epivoz-crawler": {
+      "token": "EpivozCrawler",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.techmeme.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "evo-uptime-bot": {
+      "token": "EvoUptimeBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.evo.agency",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "exasearchbot": {
+      "token": "ExaSearchBot"
+    },
+    "exodus-movement": {
+      "token": "ExodusMovement",
+      "aliases": [
+        "GlobalCoinHeight"
+      ]
+    },
+    "eyemonituptimebot": {
+      "token": "EyeMonit",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://eyemonit.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "ezoicbot": {
+      "token": "EzoicBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://www.ezoic.com/bot/",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "EzoicBot-Sitespeed",
+        "EzoicBot-UptimeOwl",
+        "EzoicBot-AdsTxt",
+        "EzoicBot-Nicheiq",
+        "EzoicBot-IntegrationCheck",
+        "EzLynx"
+      ]
+    },
+    "facebook": {
+      "token": "facebookexternalhit",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.facebook.com/documentation/sharing/webmasters/web-crawlers",
+        "verifiedAt": "2026-10-03"
+      },
+      "aliases": [
+        "facebookcatalog",
+        "meta-externalagent",
+        "meta-externalfetcher"
+      ]
+    },
+    "facebookbot": {
+      "token": "FacebookBot",
+      "verification": {
+        "status": "unverified",
+        "evidence": "none",
+        "note": "No longer listed in Meta's crawler documentation (meta-externalagent replaced it for AI training)."
+      }
+    },
+    "factset-spyderbot": {
+      "token": "factset_spyderbot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.factset.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "fastcron": {
+      "token": "FastCron",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.fastcron.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "fastmail-bot": {
+      "token": "FastmailUA",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://www.fastmail.com/policies/bots/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "fdl-stats-bot": {
+      "token": "FDL"
+    },
+    "fedicaapp": {
+      "token": "Fedicabot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://fedica.com/info/fedicabot",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "Fedica",
+        "FedicaApp"
+      ]
+    },
+    "fedreporter-bot-for-ffiec-2": {
+      "token": "FedReporterDataBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://fedreporter.net/FedReporterBotDocumentation/Readme.txt",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "FedReporterDataBot-Testing"
+      ]
+    },
+    "feedbin": {
+      "token": "Feedbin",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://feedbin.com/help",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "feedblitz": {
+      "token": "FeedBlitz",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.feedblitz.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "feeder": {
+      "token": "feeder.co",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://feeder.co",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "feedly": {
+      "token": "Feedly",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.feedly.com/fetcher.html",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "feedotter": {
+      "token": "FeedOtter",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "http://www.feedotter.com/privacy",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "feedwind": {
+      "token": "Feedwind",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://feed.mikle.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "findimagebot": {
+      "token": "FindImageDownloader",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.find.gr",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "firmlyai-bot": {
+      "token": "FirmlyAI"
+    },
+    "fishbot": {
+      "token": "FishBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://fish.audio",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "fit-feeds-fetcher": {
+      "token": "follow.it",
+      "aliases": [
+        "Specificfeeds",
+        "FeedBurner"
+      ]
+    },
+    "flashy-php-1-0-0": {
+      "token": "Flashy-PHP",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://flashy.app/help/integrations/troubleshooting/ip-address-whitelisting/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "flipboard": {
+      "token": "FlipboardProxy",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://about.flipboard.com/browserproxy/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "flipboardrss": {
+      "token": "FlipboardRSS",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://about.flipboard.com/rss-guidelines/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "flowpane": {
+      "token": "Flowpane",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://flowpane.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "fn-legislative-and-regulatory-bot": {
+      "token": "FiscalNote",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://fiscalnote.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "foregenix-threatview-webscan": {
+      "token": "Foregenix"
+    },
+    "freespoke": {
+      "token": "Freespoke",
+      "aliases": [
+        "crawler.freespoke.com"
+      ]
+    },
+    "freshping": {
+      "token": "FreshpingBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://support.freshping.io/en/support/solutions/articles/50000003709-freshping-api-documentation",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "Freshping"
+      ]
+    },
+    "fullfact-ingest": {
+      "token": "FullFact",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://fullfact.ai",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "fullstorybot": {
+      "token": "FullStoryBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://help.fullstory.com/spp-ref/343521-what-is-the-fullstorybot",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "funnelback": {
+      "token": "Funnelback",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://docs.squiz.net/funnelback/docs/latest/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "gatus": {
+      "token": "Gatus",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://gatus.io",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "geedoshopproductfinder": {
+      "token": "GeedoShopProductFinder",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://geedo.com/product-finder/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "gemmetricbot": {
+      "token": "GemmetricBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://gemmetric.ai",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "ghost-inspector": {
+      "token": "GhostInspector"
+    },
+    "ghostexplore": {
+      "token": "GhostExplore",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://ghost.org",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "gigabot": {
+      "token": "Gigabot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.gigablast.com/?c=main",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "github-hookshot": {
+      "token": "GitHub-Hookshot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://github.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "google": {
+      "token": "Googlebot",
+      "purpose": {
+        "purpose": "search-engine",
+        "sourceUrl": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers",
+        "note": "Google Search.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers",
+        "verifiedAt": "2026-10-03"
+      },
+      "aliases": [
+        "Googlebot-Image",
+        "Googlebot-News",
+        "Googlebot-Video"
+      ]
+    },
+    "google-adwords-express": {
+      "token": "Google-AdWords-Express",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://developers.google.com/search/docs/crawling-indexing/google-user-triggered-fetchers",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "google-adwords-instant": {
+      "token": "Google-Adwords-Instant",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.google.com/adsbot.html",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "google-agent": {
+      "token": "Google-Agent",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-user-triggered-fetchers",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "google-businesslinkverification": {
+      "token": "Google-BusinessLinkVerification",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://support.google.com/business/answer/13769188",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "Google-BusinessLinkVerifi"
+      ]
+    },
+    "google-calendar-importer-2": {
+      "token": "Google-Calendar-Importer",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://support.google.com/calendar/answer/37100?hl=en&co=GENIE.Platform%3DDesktop",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "google-cloudvertexbot": {
+      "token": "Google-CloudVertexBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers",
+        "verifiedAt": "2026-10-03"
+      },
+      "aliases": [
+        "CloudVertexBot"
+      ]
+    },
+    "google-digital-asset-links": {
+      "token": "GoogleAssociationService"
+    },
+    "google-extended": {
+      "token": "Google-Extended",
+      "purpose": {
+        "purpose": "training",
+        "sourceUrl": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers",
+        "note": "Google: Google-Extended controls whether content is used to train and ground Gemini models; it doesn't affect Search.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "google-firebase-bot": {
+      "token": "Google-Firebase",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "google-flights-search-spackle": {
+      "token": "Google-Flights-Search-Spackle"
+    },
+    "google-inspection-tool": {
+      "token": "Google-InspectionTool",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers",
+        "verifiedAt": "2026-10-03"
+      },
+      "aliases": [
+        "Googlebot"
+      ]
+    },
+    "google-other": {
+      "token": "GoogleOther",
+      "purpose": {
+        "purpose": "other",
+        "sourceUrl": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers",
+        "note": "Google: generic crawler for one-off product-team fetches; not Search, not Gemini training.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "google-pagerenderer-3": {
+      "token": "Google-PageRenderer"
+    },
+    "google-publisher-center": {
+      "token": "GoogleProducer",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.google.com/search/docs/crawling-indexing/google-user-triggered-fetchers#googleproducer",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "google-safety": {
+      "token": "Google-Safety",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.google.com/search/docs/crawling-indexing/google-special-case-crawlers",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "google-scholar": {
+      "token": "Googlebot-IA",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://scholar.google.com/intl/en/scholar/libraries.html",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "google-site-verification": {
+      "token": "Google-Site-Verification",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.google.com/search/docs/crawling-indexing/google-user-triggered-fetchers",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "google-travelads-live": {
+      "token": "Google-TravelAds-Live"
+    },
+    "google-trust-services": {
+      "token": "Google-Trust-Services",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://pki.goog/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "google-web-snippet-2": {
+      "token": "Google-PageRenderer",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "google-xrawler": {
+      "token": "google-xrawler",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "googleads": {
+      "token": "AdsBot-Google",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://support.google.com/webmasters/answer/1061943?hl=en",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "AdsBot-Google-Mobile"
+      ]
+    },
+    "googleapi": {
+      "token": "APIs-Google",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.google.com/webmasters/APIs-Google.html",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "googlebot-news": {
+      "token": "Googlebot-News",
+      "purpose": {
+        "purpose": "search-engine",
+        "sourceUrl": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers",
+        "note": "Google News.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "googlebotimages": {
+      "token": "Googlebot-Image",
+      "purpose": {
+        "purpose": "search-engine",
+        "sourceUrl": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers",
+        "note": "Google Images.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "googlebotvideos": {
+      "token": "Googlebot-Video",
+      "purpose": {
+        "purpose": "search-engine",
+        "sourceUrl": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers",
+        "note": "Google Video search.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "googledata": {
+      "token": "Google-Structured-Data-Testing-Tool",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://support.google.com/webmasters/answer/1061943?hl=en",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "Google-Structured-Data-Testing"
+      ]
+    },
+    "googledisplayads": {
+      "token": "Google-Display-Ads-Bot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://support.google.com/adsense/answer/99376",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "googlefeedfetcher": {
+      "token": "FeedFetcher-Google",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "googleimageproxy": {
+      "token": "GoogleImageProxy",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://support.google.com/webmasters/answer/1061943?hl=en",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "googlemedia": {
+      "token": "Mediapartners-Google",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://support.google.com/webmasters/answer/1061943?hl=en",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "Mediapartners"
+      ]
+    },
+    "googleother-image": {
+      "token": "GoogleOther-Image",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "googleother-video": {
+      "token": "GoogleOther-Video",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "googlereadaloud": {
+      "token": "Google-Read-Aloud",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://support.google.com/webmasters/answer/1061943?hl=en",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "answer"
+      ]
+    },
+    "gopay": {
+      "token": "GoPay"
+    },
+    "gptbot": {
+      "token": "GPTBot",
+      "purpose": {
+        "purpose": "training",
+        "sourceUrl": "https://developers.openai.com/api/docs/bots",
+        "note": "OpenAI: GPTBot crawls content that may be used to train generative AI models.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.openai.com/api/docs/bots",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "grafana-labs": {
+      "token": "synthetic-monitoring-agent",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://grafana.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "grafana-synthetic-monitoring-2": {
+      "token": "synthetic-monitoring-agent"
+    },
+    "grapeshot": {
+      "token": "GrapeshotCrawler",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.oracle.com/corporate/acquisitions/grapeshot/crawler.html",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "grok-bot": {
+      "token": "GrokAgent",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://x.ai/bot",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "groovinads": {
+      "token": "GroovinaAdsbot"
+    },
+    "gtmetrix": {
+      "token": "GTmetrix",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://datadome.co/bots/gtmetrix/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "gtranslate-2": {
+      "token": "GTranslate-Translation-Proxy",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://gtranslate.io",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "guestpostsbot": {
+      "token": "GuestpostsBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://guestposts.com.br",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "hankbot": {
+      "token": "hankbot"
+    },
+    "harkbot": {
+      "token": "HarkBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://app.hark.com/about/bot",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "hatena": {
+      "token": "Hatena",
+      "aliases": [
+        "HatenaBlog-bot",
+        "Hatena-Favicon",
+        "HatenaBookmark",
+        "Scissors",
+        "Antenna",
+        "UserAgent"
+      ]
+    },
+    "hellowork-bot": {
+      "token": "HelloworkJobPostingBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.hellowork-group.com/en/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "helpfeel-notabot": {
+      "token": "Notabot"
+    },
+    "henry-shopping-agent": {
+      "token": "HenryBot"
+    },
+    "hetrixtools": {
+      "token": "HetrixTools",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://hetrixtools.com/uptime-monitor-bot/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "hey-email-privacy-proxy-2": {
+      "token": "hey.com"
+    },
+    "hifibot": {
+      "token": "HIFIBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://hi.fi/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "hosttracker": {
+      "token": "HostTracker",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.host-tracker.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "hotjar": {
+      "token": "Hotjar"
+    },
+    "hstspreload-bot": {
+      "token": "hstspreload-bot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://hstspreload.org/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "httpstatus": {
+      "token": "HttpStatus",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://httpstatus.io",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "hubspot-crawler": {
+      "token": "HubSpot"
+    },
+    "hubspot-feed-fetcher": {
+      "token": "HubSpot-FeedFetcher",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.hubspot.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "hubspot-page-fetcher": {
+      "token": "HubSpot"
+    },
+    "huckabot": {
+      "token": "Huckabot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://huckabuy.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "hund": {
+      "token": "Bluthund",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://hund.io/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "hydrozen-io": {
+      "token": "Hydrozen.io",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://hydrozen.io",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "hypemachine": {
+      "token": "Hype",
+      "aliases": [
+        "Machine"
+      ]
+    },
+    "i-search-crawler": {
+      "token": "i-search-crawler",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://scala-com.jp/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "ias-crawler": {
+      "token": "ias_crawler",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "http://integralads.com/site-indexing-policy/",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "ias_wombles"
+      ]
+    },
+    "iboubot-3": {
+      "token": "IbouBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://ibou.io/iboubot.html",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "icccrawler": {
+      "token": "ICC-Crawler",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://ucri.nict.go.jp",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "idealo-2": {
+      "token": "idealo-bot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://partner.idealo.com/de/bot",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "iframely": {
+      "token": "Iframely",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://iframely.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "ifttt-rss-feed-service": {
+      "token": "IFTTT",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://ifttt.com/feed/details",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "imagesiftbot": {
+      "token": "ImagesiftBot",
+      "purpose": {
+        "purpose": "other",
+        "sourceUrl": "https://www.imagesift.com/about",
+        "note": "ImageSift: indexes images for its search and retrieval products; no training use documented.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://www.imagesift.com/about",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "img2dataset": {
+      "token": "img2dataset",
+      "purpose": {
+        "purpose": "other",
+        "sourceUrl": "https://github.com/rom1504/img2dataset",
+        "note": "A dataset download tool, not a crawler with an operator; it doesn't read robots.txt.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "verifiedAt": "2026-10-04"
+      }
+    },
+    "indeedjobbot": {
+      "token": "IndeedJobBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.indeed.com/about/indeed-crawlers",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "inforoom-reader": {
+      "token": "InfoRoomReader",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://inforoom.fr",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "innguma-fetcher": {
+      "token": "Innguma",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://factory.innguma.com/fetcher/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "innologica": {
+      "token": "Inoreader",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://www.inoreader.com/feed-fetcher",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "inoreader.com"
+      ]
+    },
+    "instantaigurubot": {
+      "token": "InstantAIGuruBot"
+    },
+    "instapaper": {
+      "token": "Instapaper",
+      "aliases": [
+        "Instaparser"
+      ]
+    },
+    "instatusbot": {
+      "token": "InstatusBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://instatus.com/help/monitoring",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "integromatbot": {
+      "token": "Integromat",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.make.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "internet-archive-archive-it": {
+      "token": "archive.org_bot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://support.archive-it.org/hc/en-us/articles/115001081186-Archive-It-Crawling-Technology",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "Archive-It",
+        "special_archiver",
+        "heritrix"
+      ]
+    },
+    "internet-archive-bot": {
+      "token": "IABot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://iabot.toolforge.org",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "internet-nl-2": {
+      "token": "internetnl",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://en.internet.nl/about/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "isdownbot": {
+      "token": "IsDownBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://help.isdown.app/custom-monitors/isdownbot",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "jagged-pixel-uptime": {
+      "token": "UptimeBot"
+    },
+    "jetpack": {
+      "token": "jetmon",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://automattic.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "jobicybot-3": {
+      "token": "JobicyBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://jobicy.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "jobswithgptcom-bot": {
+      "token": "jobswithgptcom-bot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://jobswithgpt.com/bot.html",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "jobswithgptcom"
+      ]
+    },
+    "jumio": {
+      "token": "Jumio"
+    },
+    "kagi": {
+      "token": "Kagibot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://kagi.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "kakaotalk-scrap-2": {
+      "token": "kakaotalk-scrap",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://developers.kakao.com/docs/latest/en/message-template/common\\#scrap",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "scrap"
+      ]
+    },
+    "kargobot-artemis": {
+      "token": "KargoBot-Artemis",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://kargo.com",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "KargoBot-Artemis-Mobile"
+      ]
+    },
+    "kb-dk-bot": {
+      "token": "netarkivindsamling",
+      "aliases": [
+        "kb.dk_bot",
+        "heritrix"
+      ]
+    },
+    "keldannewscrawler": {
+      "token": "KeldanNewsCrawler",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://keldan.is",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "kernel": {
+      "token": "Kernel",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://www.kernel.sh/docs",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "kernel-search": {
+      "token": "KernelSearchBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://kernel.sh/docs/bots",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "kimibot": {
+      "token": "KimiBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://www.kimi.com/policies/kimi-crawlers",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "kinsta-bot": {
+      "token": "kinsta-bot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://kinsta.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "klaviyo": {
+      "token": "Klaviyo",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.klaviyo.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "klaviyoaibot": {
+      "token": "KlaviyoAIBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://help.klaviyo.com/hc/en-us/articles/40496146232219",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "legalmonster": {
+      "token": "LegalMonster",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.legalmonster.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "letsencrypt": {
+      "token": "LetsEncrypt"
+    },
+    "level-9-search-bot": {
+      "token": "Level9SearchBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://level9.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "library-of-congress-web-archiving": {
+      "token": "LCWebArchiving",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://www.loc.gov/programs/web-archiving/for-site-owners",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "line-ogp-scraper": {
+      "token": "line-poker",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://poker.line.naver.jp/",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "facebookexternalhit"
+      ]
+    },
+    "liner-bot": {
+      "token": "LinerBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://docs.getliner.com/docs/linerbot",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "linespider": {
+      "token": "Linespider",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://linecorp.com/en/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "linkcheckerbot": {
+      "token": "LinkCheckerBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://linkchecker.pro/robot",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "linkcheckerpro": {
+      "token": "LinkCheckerBot"
+    },
+    "linkedin": {
+      "token": "LinkedInBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.linkedin.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "linksindexerbot": {
+      "token": "LinksIndexerBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://linksindexer.com/bot",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "linktiger": {
+      "token": "LinkTiger",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://linktiger.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "linkupbot": {
+      "token": "LinkupBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.linkup.so/bot",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "logicmonitor": {
+      "token": "LogicMonitor",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.logicmonitor.com/support/about-logicmonitor/overview/logicmonitor-public-ip-addresses-dns-names",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "SiteMonitor"
+      ]
+    },
+    "loomlybot": {
+      "token": "LoomlyBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.loomly.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "macrobondbot": {
+      "token": "Macrobondbot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.macrobond.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "magibot": {
+      "token": "MagiBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.peak-labs.com/docs/en/magi/about-magibot",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "magnetmebot": {
+      "token": "Magnet.me-web",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://magnet.me/bot.html",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "magpiecrawler": {
+      "token": "magpie-crawler",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.brandwatch.com/legal/magpie-crawler/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "mail-ru-bot": {
+      "token": "Mail.RU_Bot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://go.mail.ru/help/robots",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "mailcoach": {
+      "token": "Mailcoach",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.mailcoach.app/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "mainwp": {
+      "token": "MainWP",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.dshost.com.au/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "make-com-2": {
+      "token": "make.com"
+    },
+    "make-platform": {
+      "token": "Make"
+    },
+    "managewp": {
+      "token": "ManageWP",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://managewp.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "manus-bot": {
+      "token": "Manus-User"
+    },
+    "marfeel": {
+      "token": "mrfCompass",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.marfeel.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "marginaliabot": {
+      "token": "search.marginalia.nu",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://search.marginalia.nu/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "marketgoo": {
+      "token": "MarketGoo",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.marketgoo.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "mars-finder": {
+      "token": "marsfinder",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://marsflag.zohodesk.com/portal/ja/kb/articles/mars-finder%E7%94%A8%E3%81%AErobots-txt%E3%81%AE%E8%A8%AD%E5%AE%9A%E3%82%92%E6%95%99%E3%81%88%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "dbot"
+      ]
+    },
+    "mavifinds-bot": {
+      "token": "Mavifinds",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://brandimi.com/mavifinds-bot/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "media-monitoring-bot": {
+      "token": "MediaMonitoringBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://mediamonitoringbot.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "mediaboardbot": {
+      "token": "mediaboardbot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://media.mediaboard.com/docs/mediaboardbot",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "medialogiabot": {
+      "token": "MedialogiaBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.mlg.ru/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "mediavine-metadata-parser": {
+      "token": "MediavineMetadataParser",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://mediavine.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "melonmesabot": {
+      "token": "CentComBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://centcom.melonmesa.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "meta-externalads": {
+      "token": "meta-externalads",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.facebook.com/documentation/sharing/webmasters/web-crawlers",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "meta-externalagent": {
+      "token": "meta-externalagent",
+      "purpose": {
+        "purpose": "training",
+        "sourceUrl": "https://developers.facebook.com/documentation/sharing/webmasters/web-crawlers",
+        "note": "Meta: crawls for use cases such as training AI models.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.facebook.com/documentation/sharing/webmasters/web-crawlers",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "meta-externalfetcher": {
+      "token": "meta-externalfetcher",
+      "purpose": {
+        "purpose": "ai-assistant",
+        "sourceUrl": "https://developers.facebook.com/documentation/sharing/webmasters/web-crawlers",
+        "note": "Fetches links on behalf of Meta AI users.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.facebook.com/documentation/sharing/webmasters/web-crawlers",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "meta-externaltest": {
+      "token": "meta-externaltest",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://developers.facebook.com/documentation/sharing/webmasters/web-crawlers",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "meta-web-indexer": {
+      "token": "meta-webindexer",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.facebook.com/documentation/sharing/webmasters/web-crawlers",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "metorik": {
+      "token": "Metorik",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://metorik.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "mgidbot": {
+      "token": "MgidBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.mgid.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "microsoftpreview": {
+      "token": "MicrosoftPreview",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://www.bing.com/webmasters/help/which-crawlers-does-bing-use-8c184ec0",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "midasnetworkbot": {
+      "token": "MidasNetworkBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://midas-network.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "mirrorwebcrawler": {
+      "token": "mirrorweb",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.mirrorweb.com/",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "MirrorWebCrawler"
+      ]
+    },
+    "missinglettrbot": {
+      "token": "MissinglettrBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://missinglettr.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "mistralai-index": {
+      "token": "MistralAI-Index",
+      "purpose": {
+        "purpose": "ai-search",
+        "sourceUrl": "https://docs.mistral.ai/robots",
+        "note": "Mistral's search index for Le Chat.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://docs.mistral.ai/robots",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "mistralai-training": {
+      "token": "MistralAI-Training",
+      "purpose": {
+        "purpose": "training",
+        "sourceUrl": "https://docs.mistral.ai/robots",
+        "note": "Mistral: builds datasets for training its models.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://docs.mistral.ai/robots",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "mistralai-user": {
+      "token": "MistralAI-User",
+      "purpose": {
+        "purpose": "ai-assistant",
+        "sourceUrl": "https://docs.mistral.ai/robots",
+        "note": "Fetches pages when Le Chat users ask.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://docs.mistral.ai/robots",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "mj12bot": {
+      "token": "MJ12bot",
+      "purpose": {
+        "purpose": "seo",
+        "sourceUrl": "https://majestic.com/",
+        "note": "Majestic backlink index.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://majestic.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "modular-ds": {
+      "token": "ModularConnector",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://uniqoders.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "mojeekbot": {
+      "token": "MojeekBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://www.mojeek.com/bot.html",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "molliebot": {
+      "token": "Mollie"
+    },
+    "mon-spark": {
+      "token": "MonSpark",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://monspark.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "monitage": {
+      "token": "MonitageUptime",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://community.fastly.com/t/verified-bot-monitage/4178",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "Monitage"
+      ]
+    },
+    "monitis": {
+      "token": "monitis",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.monitis.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "monitorss": {
+      "token": "MonitoRSS",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://monitorss.xyz",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "montasticmonitor": {
+      "token": "montastic-monitor",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.montastic.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "montonio-webhooks": {
+      "token": "MontonioWebhooks",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://docs.montonio.com/api/stargate/guides/webhooks",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "motominerbot": {
+      "token": "MotoMinerBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://motominer.com/Bot",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "mrgbot": {
+      "token": "MRGbot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.mrg.ro",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "msnbot": {
+      "token": "msnbot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.bing.com/webmaster/help/which-crawlers-does-bing-use-8c184ec0",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "muck-rack-scraper": {
+      "token": "MuckRack",
+      "aliases": [
+        "MuckRackFeedParser",
+        "muckrack.com"
+      ]
+    },
+    "muse": {
+      "token": "muse-",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://ai.meta.com",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "mushilabs-clearscopebot": {
+      "token": "Clearscopebot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://www.clearscope.io/support/articles/clearscopebot",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "nava-labs-asp-dev": {
+      "token": "Nava"
+    },
+    "naver": {
+      "token": "Yeti",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://help.naver.com/support/contents/contents.help?serviceNo=19634&categoryNo=19668&_website_robots",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "navu": {
+      "token": "NavuBot"
+    },
+    "neevabot": {
+      "token": "Neevabot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://neeva.com/neevabot",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "nekuda-payment-executor": {
+      "token": "Nekuda",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://docs.nekuda.ai/payment-executor",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "netcraft": {
+      "token": "NetcraftSurveyAgent",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.netcraft.com/",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "Netcraft"
+      ]
+    },
+    "netumo": {
+      "token": "netumo"
+    },
+    "netvigie": {
+      "token": "NETVIGIE"
+    },
+    "netweak": {
+      "token": "Netweak",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://netweak.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "new-york-times-newsgathering": {
+      "token": "nyt_scraping",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://int.nyt.com/assets/scraping.json",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "newrelic": {
+      "token": "NewRelicbot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://newrelic.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "news-blur": {
+      "token": "NewsBlur",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://newsblur.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "newsbank": {
+      "token": "NewsBank",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.newsbank.com/",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "NewsBank.com",
+        "NewsBank.comMobile"
+      ]
+    },
+    "newsnow": {
+      "token": "NewsNow",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.newsnow.co.uk/h/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "nitro": {
+      "token": "Nitro-Warmup-Agent",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://radar.cloudflare.com/bots/directory/nitro",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "Nitro-Webhook-Agent",
+        "Nitro-Optimizer-Agent",
+        "Nitro-"
+      ]
+    },
+    "nixstats": {
+      "token": "NIXStatsbot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.nixstats.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "nodeping": {
+      "token": "NodePing",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://nodeping.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "noibu": {
+      "token": "Noibu"
+    },
+    "noorobot": {
+      "token": "noorobot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://noordigital.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "nooshub": {
+      "token": "Nooshub",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.nooshub.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "nostocrawlerbot": {
+      "token": "NostoCrawlerBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://help.nosto.com/en/articles/586911-nosto-s-bot-crawler-s-header-agent-details",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "nostra": {
+      "token": "NostraBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://www.nostra.ai/edge-optimization",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "notion-automation": {
+      "token": "NotionAutomation"
+    },
+    "novellum-ai-crawl": {
+      "token": "Novellum"
+    },
+    "oai-adsbot": {
+      "token": "OAI-AdsBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.openai.com/api/docs/bots",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "oai-searchbot": {
+      "token": "OAI-SearchBot",
+      "purpose": {
+        "purpose": "ai-search",
+        "sourceUrl": "https://developers.openai.com/api/docs/bots",
+        "note": "ChatGPT search results; not used for training.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.openai.com/api/docs/bots",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "observer-3": {
+      "token": "obsrvr.net",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://obsrvr.net/about",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "ohdear": {
+      "token": "OhDear.app",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://ohdear.app/docs/faq/what-is-the-oh-dear-checker",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "OhDear"
+      ]
+    },
+    "okx-dolphin-crawler": {
+      "token": "OKX-dolphin-crawler",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://web3.okx.com/security/crawler-allowlist",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "omgili": {
+      "token": "Omgili",
+      "verification": {
+        "status": "unverified",
+        "evidence": "none",
+        "note": "Webz.io documents Omgilibot, Webzio and Webzio-Extended, not Omgili."
+      }
+    },
+    "omgilibot": {
+      "token": "Omgilibot",
+      "purpose": {
+        "purpose": "other",
+        "sourceUrl": "https://webz.io/bot.html",
+        "note": "Webz.io's legacy data crawler; Webz.io's AI-training token is Webzio-Extended.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://webz.io/bot.html",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "omim-litrack-2": {
+      "token": "OMIM-Litrack",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://omim.org",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "omnisend": {
+      "token": "Omnisend",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://bots.omnisend.io/cf.txt",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "oncrawl": {
+      "token": "Oncrawl",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.oncrawl.com/",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "www.oncrawl.com"
+      ]
+    },
+    "onetrust-cmp-scanner": {
+      "token": "OneTrust"
+    },
+    "online-webceo-bot": {
+      "token": "online-webceo-bot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.webceo.com/webceo-bots.htm",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "onlineornot": {
+      "token": "OnlineOrNot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://onlineornot.com/",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "OnlineOrNot.com_bot"
+      ]
+    },
+    "onticabot-2": {
+      "token": "OnticaBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://ontica.com.au",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "opengraphbot": {
+      "token": "OpenGraph.io",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.opengraph.io/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "openrss": {
+      "token": "OpenRSS",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://openrss.org",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "orlo-link-preview": {
+      "token": "Orlo-LinkPreview",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://orlo.tech",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "osanobot": {
+      "token": "OsanoBot"
+    },
+    "oseox": {
+      "token": "Oseox",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://tool.oseox.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "outbrain": {
+      "token": "outbrain",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.outbrain.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "outsell-url-validator": {
+      "token": "OutsellURLValidator",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.outsell.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "overcast": {
+      "token": "Overcast",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://overcast.fm/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "ozon-web-grabber": {
+      "token": "OdklBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://udger.com/resources/ua-list/bot-detail?bot=OdklBot",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "paddle-webhooks": {
+      "token": "Paddle"
+    },
+    "paesslermonitoring": {
+      "token": "PRTGCloudBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.paessler.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "pagefreezer-website-archiving-2": {
+      "token": "PageFreezer",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.pagefreezer.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "panachebot": {
+      "token": "PanacheBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://withpanache.dev",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "panopta": {
+      "token": "Panopta",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.panopta.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "parsely": {
+      "token": "parse.ly",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://docs.parse.ly/crawler/",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "parsely.com"
+      ]
+    },
+    "particlenewsbot": {
+      "token": "ParticleNewsBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://particle.news/bot",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "payhawk-invoice-fetching-bot": {
+      "token": "Payhawk",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://payhawk.com/help/overview-of-the-financial-controller-agent",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "paypal": {
+      "token": "PayPal",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.paypal.com/ipn",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "payroll-bot": {
+      "token": "AdpResearchBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://payroll-bot.adp.com/docs",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "pci-qualys": {
+      "token": "cf-qualys-scanner",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.qualys.com/apps/pci-compliance/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "peer39_crawler": {
+      "token": "Peer39_crawler",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "verifiedAt": "2026-10-04"
+      }
+    },
+    "performlinecrawler": {
+      "token": "PerformLineCrawler",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://performline.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "perplexity-user": {
+      "token": "Perplexity-User",
+      "purpose": {
+        "purpose": "ai-assistant",
+        "sourceUrl": "https://docs.perplexity.ai/guides/bots",
+        "note": "Fetches pages when Perplexity users ask.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://docs.perplexity.ai/guides/bots",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "perplexitybot": {
+      "token": "PerplexityBot",
+      "category": "AI_SEARCH",
+      "purpose": {
+        "purpose": "ai-search",
+        "sourceUrl": "https://docs.perplexity.ai/guides/bots",
+        "note": "Perplexity search index; not used for training.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://docs.perplexity.ai/guides/bots",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "petalbot": {
+      "token": "PetalBot",
+      "purpose": {
+        "purpose": "search-engine",
+        "sourceUrl": "https://webmaster.petalsearch.com/site/petalbot",
+        "note": "Huawei Petal Search.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://aspiegel.com/petalbot",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "ping-admin": {
+      "token": "PingAdmin",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://ping-admin.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "pingdom": {
+      "token": "Pingdom.com_bot",
+      "aliases": [
+        "pingbot",
+        "PingdomPageSpeed",
+        "PingdomTMS"
+      ]
+    },
+    "pingping": {
+      "token": "pingping.io",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://pingping.io",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "pingpingbot": {
+      "token": "pingping.io"
+    },
+    "pinterest": {
+      "token": "Pinterestbot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://help.pinterest.com/en/business/article/pinterestbot",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "Pinterest",
+        "pinterest.com"
+      ]
+    },
+    "placer-ai-crawler": {
+      "token": "Placer.ai-Crawler",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.placer.ai/automated-access",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "platebreaker": {
+      "token": "Platebreaker",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.platebreaker.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "playpatrol": {
+      "token": "Playpatrol",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://playpatrol.app",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "pocketcasts-feed-parser": {
+      "token": "PocketCasts",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://support.pocketcasts.com/knowledge-base/pocket-casts-feed-parser/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "polar": {
+      "token": "polar.sh"
+    },
+    "potions": {
+      "token": "Potions",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://get-potions.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "prerender": {
+      "token": "Prerender",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://docs.prerender.io/article/33-overview-of-prerender-crawlers",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "press-engine-bot": {
+      "token": "PressEngineBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.pressengine.net",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "pricey": {
+      "token": "PriceyBot"
+    },
+    "printfriendly": {
+      "token": "PrintFriendly.com",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.printfriendly.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "pro-sitemaps": {
+      "token": "Pro-Sitemaps",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://pro-sitemaps.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "probely": {
+      "token": "ProbelySPDR",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.probely.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "productsup-crawler": {
+      "token": "productsup.io",
+      "aliases": [
+        "Productsup"
+      ]
+    },
+    "project-honeypot": {
+      "token": "Verispider",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://radar.cloudflare.com/bots/directory/project-honeypot",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "PHPot"
+      ]
+    },
+    "project-shield-urlcheck": {
+      "token": "ProjectShield-UrlCheck",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://projectshield.withgoogle.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "protopage": {
+      "token": "Protopage",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.protopage.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "proximic": {
+      "token": "proximic",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.comscore.com/Web-Crawler",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "pulsetic-8": {
+      "token": "pulsetic.com",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://help.pulsetic.com/article/198-pulsetic-user-agent",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "pureconsentbot": {
+      "token": "PureConsentBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://pureconsent.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "pwabuilder": {
+      "token": "PWABuilderHttpAgent",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.pwabuilder.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "qatechbot": {
+      "token": "QATechBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://qa.tech",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "qcbot-3": {
+      "token": "qcbot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://docs.quic.cloud/services/qcbot/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "qualifiedbot": {
+      "token": "QualifiedBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://www.qualified.com/legal/qualified-crawler-user-agent",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "qualys": {
+      "token": "Qualys"
+    },
+    "quantcastbot": {
+      "token": "Quantcastbot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "http://www.quantcast.com/bot",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "quartr-crawler": {
+      "token": "QuartrCrawler"
+    },
+    "quickpay-callback": {
+      "token": "Quickpay"
+    },
+    "qwantbot": {
+      "token": "Qwantbot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://help.qwant.com/bot/",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "Qwantbot-junior",
+        "Qwantbot-news",
+        "Qwantbot-official",
+        "Qwantbot-wikidata",
+        "Qwantbot-opt"
+      ]
+    },
+    "rackspace": {
+      "token": "Rackspace",
+      "aliases": [
+        "Monitoring"
+      ]
+    },
+    "rakutenusabot-image": {
+      "token": "rakutenusabot-image",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://product-image.ebates.com/item-gsp/rakutenusabot.html",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "raptive-site-inspector": {
+      "token": "RaptiveSiteInspector",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://raptive.com",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "razorpay-webhook-3": {
+      "token": "Razorpay"
+    },
+    "rdtvlokipbot": {
+      "token": "RDTvlokipBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://search.rdtvlokip.fr",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "readable": {
+      "token": "Readable",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://readable.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "reconwavebot-2": {
+      "token": "ReconWaveBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://reconwave.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "recurly": {
+      "token": "Recurly",
+      "aliases": [
+        "Webhooks"
+      ]
+    },
+    "redactus-web-classifier": {
+      "token": "RedactusWebClassifier",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://bot.redactus.co.uk/docs",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "redirect-pizza-destination-monitor": {
+      "token": "redirect.pizza",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://enflow.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "reelevant": {
+      "token": "Reelevant",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://reelevant.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "reflectionbot": {
+      "token": "Reflectionbot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://reflection.ai/reflectionbot",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "retool": {
+      "token": "Retool",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://docs.tryretool.com/docs/apis",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "retrolistecom": {
+      "token": "RetroListeCOM",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://retroliste.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "revvim": {
+      "token": "RevvimGort",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://revvim.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "reward-gateway": {
+      "token": "reward-gateway"
+    },
+    "rigor": {
+      "token": "Rigor",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.splunk.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "rogerbot": {
+      "token": "rogerbot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://moz.com/help/moz-procedures/crawlers/rogerbot",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "rogerbot-crawler"
+      ]
+    },
+    "rss2tg-bot": {
+      "token": "rss2tg_bot",
+      "aliases": [
+        "rss2tg"
+      ]
+    },
+    "rssapi": {
+      "token": "RSSAPI",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://rssapi.net/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "ryebot": {
+      "token": "RyeBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://rye.com/docs/api-v2-experimental/ryebot",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "salesforce": {
+      "token": "SFDC-Callout",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://help.salesforce.com/articleView?id=000321501&type=1&mode=1",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "salesviewer": {
+      "token": "page-preview-tool",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.salesviewer.com/en/",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "SalesViewerBot"
+      ]
+    },
+    "sansec-security-monitor": {
+      "token": "Sansec"
+    },
+    "scientificadvisorbot": {
+      "token": "ScientificAdvisorBot"
+    },
+    "scour-rss-bot": {
+      "token": "ScourRSSBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://scour.ing/bot",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "Scour",
+        "ScourBot",
+        "scour.ing"
+      ]
+    },
+    "screpy": {
+      "token": "screpy",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://screpy.com/faq/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "se-ranking-bot": {
+      "token": "SEBot-WA",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://help.seranking.com/en/project-tools/website-audit/overview",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "searchatlas-bot": {
+      "token": "SearchAtlas",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://help.searchatlas.com/en/",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "SearchAtlas-Research"
+      ]
+    },
+    "securityheaders": {
+      "token": "SecurityHeaders",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://securityheaders.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "seekport": {
+      "token": "SeekportBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.seekport.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "selectika-ai": {
+      "token": "SelectikaScraper",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://selectika.com/bot/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "semonto-3": {
+      "token": "Semonto",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://semonto.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "semrush-ba": {
+      "token": "SemrushBot-BA",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://www.semrush.com/bot/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "semrush-bl": {
+      "token": "SemrushBot",
+      "purpose": {
+        "purpose": "seo",
+        "sourceUrl": "https://www.semrush.com/bot/",
+        "note": "Semrush backlink index.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://www.semrush.com/bot/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "semrush-lb": {
+      "token": "SemrushBot"
+    },
+    "semrush-sa": {
+      "token": "SemrushBot-SA",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.semrush.com/bot/",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "SiteAuditBot"
+      ]
+    },
+    "semrush-si": {
+      "token": "SemrushBot-SI",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.semrush.com/on-page-seo-checker/ ; https://www.semrush.com/seo-content-template/ ; https://www.semrush.com/topic-research/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "semrush-siteauditbot": {
+      "token": "SiteAuditBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.semrush.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "semrush-swa": {
+      "token": "SemrushBot-SWA",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.semrush.com/swa/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "semrushbot-ocob": {
+      "token": "SemrushBot-OCOB",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.semrush.com/bot/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "sendcloud-2": {
+      "token": "Sendcloud",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.sendcloud.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "sendgrid": {
+      "token": "SendGrid"
+    },
+    "sentibot": {
+      "token": "SentiBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://sentione.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "sentinelbot": {
+      "token": "SentinelBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://sentinel.rootstuff.io",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "sentry": {
+      "token": "sentry",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://sentry.io",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "sentry-uptime-monitoring": {
+      "token": "SentryUptimeBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://docs.sentry.io/product/alerts/uptime-monitoring/troubleshooting/#verify-firewall-configuration",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "seo-audit-check-bot": {
+      "token": "seo-audit-check-bot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.webceo.com/webceo-bots.htm",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "seo4ajax": {
+      "token": "s4a",
+      "aliases": [
+        "seo4ajax.com"
+      ]
+    },
+    "seobilitybot": {
+      "token": "SeobilityBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://www.seobility.net/sites/bot.html",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "Seobility"
+      ]
+    },
+    "sequelwpbpt": {
+      "token": "SequelWP",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://sequelwp.com.au",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "serankingbacklinksbot": {
+      "token": "SERankingBacklinksBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://seranking.com/backlinks-crawler",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "serpstatbot-6": {
+      "token": "serpstatbot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://serpstatbot.com/",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "curl"
+      ]
+    },
+    "serverdensity": {
+      "token": "ServerDensity"
+    },
+    "serverhunter": {
+      "token": "ServerHunterSpider",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.serverhunter.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "seznam": {
+      "token": "SeznamBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://napoveda.seznam.cz/en/seznambot-crawler/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "shapbot": {
+      "token": "ShapBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://docs.parallel.ai/resources/crawler",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "shopify-captain-hook": {
+      "token": "Shopify-Captain-Hook",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "shortwave-image-fetcher": {
+      "token": "Shortwave"
+    },
+    "silktidebot": {
+      "token": "SilktideBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://help.silktide.com/en/articles/4606146-silktidebot-our-site-scanning-bot",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "Silktide",
+        "articles"
+      ]
+    },
+    "simpay": {
+      "token": "SimPay-IPN",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://simpay.pl",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "sirdatabot": {
+      "token": "SirdataBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.sirdata.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "sistrix-optimizer": {
+      "token": "SISTRIX"
+    },
+    "site-search-360": {
+      "token": "SiteSearch360",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.sitesearch360.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "site24x7": {
+      "token": "site24x7",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.site24x7.com",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "site24x7.com"
+      ]
+    },
+    "sitecheck-sitecrawl": {
+      "token": "SiteCheck-sitecrawl",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://support.siteimprove.com/hc/en-gb/articles/206345523-What-IP-addresses-and-user-agents-are-used-by-Siteimprove-",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "sitecockpit-monitoring": {
+      "token": "SiteCockpit",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.sitecockpit.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "siteguru": {
+      "token": "SiteGuruCrawler",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.siteguru.co/crawler",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "siteimprove-linkcheck": {
+      "token": "LinkCheck"
+    },
+    "sitelock": {
+      "token": "SiteLockSpider",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "http://sitelock.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "siteuptime": {
+      "token": "SiteUptime",
+      "aliases": [
+        "SiteUptime.com"
+      ]
+    },
+    "skroutzbot": {
+      "token": "SkroutzBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.skroutz.gr/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "skroutzimagebot": {
+      "token": "Skroutz",
+      "aliases": [
+        "SkroutzBot"
+      ]
+    },
+    "skypeuripreview": {
+      "token": "SkypeUriPreview",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.skype.com/en/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "slackbot": {
+      "token": "Slackbot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://api.slack.com/robots",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "Slackbot-LinkExpanding"
+      ]
+    },
+    "slackbotimg": {
+      "token": "Slack-ImgProxy",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://api.slack.com/robots",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "slickstream": {
+      "token": "SlickBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.slickstream.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "smarsh": {
+      "token": "SmarshBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.smarsh.com/platform/compliance-management/web-archive",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "smartologybot-2": {
+      "token": "SmartologyBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://smartology.net/smartologybot/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "smtnetpmbot": {
+      "token": "SMTnetPMBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://smtnet.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "snipcart": {
+      "token": "Snipcart",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://snipcart.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "solarwinds-observability": {
+      "token": "solarwinds",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://documentation.solarwinds.com/en/success_center/observability/content/get-started/dem_getting_started_guide.htm",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "sora-caisse-pos": {
+      "token": "Sora",
+      "aliases": [
+        "Sora-POS",
+        "POS"
+      ]
+    },
+    "sourcedash": {
+      "token": "sourcedash",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.sourcedashboard.co.uk",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "spark-shipping": {
+      "token": "SparkShipping",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.sparkshipping.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "spark-uptime": {
+      "token": "SparkUptime",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://sparkuptime.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "sparkpost": {
+      "token": "SparkPost",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.sparkpost.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "spectate": {
+      "token": "Spectate",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://docs.spectate.net/faq/uptime-monitor-bot",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "splunk-attack-analyzer": {
+      "token": "TwinWaveScanner",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://radar.cloudflare.com/bots/directory/splunk-attack-analyzer",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "splunk-synthetics": {
+      "token": "Splunk"
+    },
+    "spyglasses": {
+      "token": "SpyglassesBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.spyglasses.io",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "stape-scanner": {
+      "token": "Stape"
+    },
+    "statabot": {
+      "token": "Statabot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.stata.com/support/statabot",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "statistikaustria": {
+      "token": "StatistikAustria",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.statistik.at/ueber-uns/innovationen-und-experimentelle-statistik/einsatz-von-kassenscannerdaten-und-webscraping-in-der-preisstatistik",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "statsdronebot": {
+      "token": "StatsDroneBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://statsdrone.com/statsdrone-bot-documentation/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "statuscake": {
+      "token": "statuscake",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.statuscake.com/",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "StatusCake_Pagespeed_Indev"
+      ]
+    },
+    "steam-chat": {
+      "token": "SteamChat",
+      "aliases": [
+        "SteamChatURLLookup",
+        "SteamChatImageProxy"
+      ]
+    },
+    "storebot-google": {
+      "token": "Storebot-Google",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://developers.google.com/crawling/docs/crawlers-fetchers/google-common-crawlers",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "stripe": {
+      "token": "Stripe"
+    },
+    "stripe-apple-pay-verify-ownership": {
+      "token": "oslopartner"
+    },
+    "stripebot": {
+      "token": "Stripebot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://docs.stripe.com/stripebot-crawler",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "sucuri": {
+      "token": "Sucuri",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://radar.cloudflare.com/bots/directory/sucuri",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "svix-webhooks": {
+      "token": "Svix-Webhooks",
+      "aliases": [
+        "Webhooks",
+        "sender-9YMgn"
+      ]
+    },
+    "swifteq-link-checker": {
+      "token": "SwifteqLinkChecker",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.swifteq.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "synapsmedia-healthcheck": {
+      "token": "SynapsMedia",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.synapsmedia.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "taboola": {
+      "token": "Taboolabot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://help.taboola.com/hc/en-us/articles/115002347594-The-Taboola-Crawler",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "telegrambot": {
+      "token": "TelegramBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "termly": {
+      "token": "TermlyBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://support.termly.io/hc/en-us/sections/30575355455633-Scanner",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "termlybot-2": {
+      "token": "TermlyBot"
+    },
+    "terracotta": {
+      "token": "Terracotta",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://github.com/CeramicTeam/CeramicTerracotta",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "Terracotta-News"
+      ]
+    },
+    "thousand-eyes": {
+      "token": "TE",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://docs.thousandeyes.com/product-documentation/tests/excluding-thousandeyes-agents-from-google-analytics",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "timpibot": {
+      "token": "Timpibot",
+      "purpose": {
+        "purpose": "search-engine",
+        "sourceUrl": "https://timpi.io",
+        "note": "Timpi's decentralized search engine index; no operator robots.txt documentation found. Left out of the search-engine preset until Timpi documents its token.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "verifiedAt": "2026-10-04"
+      }
+    },
+    "tnothesiscrawler-3": {
+      "token": "TNOThesisCrawler",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://diamonds.tno.nl/bot-policy",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "trellis-services": {
+      "token": "Trellis-Services",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.mediavine.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "trendictionbot": {
+      "token": "trendictionbot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.talkwalker.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "trustedsite": {
+      "token": "TrustedSite",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.trustedsite.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "trustlink-verificationagent": {
+      "token": "TrustLink-VerificationAgent",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://trustlink360.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "trustly": {
+      "token": "Trustly"
+    },
+    "ttd-content": {
+      "token": "TTD-Content",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.thetradedesk.com/us/ttd-content",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "turnitinbot": {
+      "token": "TurnitinBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://www.turnitin.com/robot/crawlerinfo.html",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "Turnitin",
+        "bit.ly"
+      ]
+    },
+    "twilioproxy": {
+      "token": "TwilioProxy",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.twilio.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "twinagent": {
+      "token": "TwinAgent",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://twin.so",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "twitterbot": {
+      "token": "Twitterbot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://twitter.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "upday": {
+      "token": "upday",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.upday.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "updown": {
+      "token": "updown.io",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://updown.io/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "uptime": {
+      "token": "Uptime"
+    },
+    "uptime-monitoring": {
+      "token": "UptimeMonitoring"
+    },
+    "uptime-robot": {
+      "token": "UptimeRobot"
+    },
+    "uptimebot": {
+      "token": "UptimeBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "uptimerobot": {
+      "token": "UptimeRobot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "http://www.uptimerobot.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "uptimia": {
+      "token": "Uptimia",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.uptimia.com/",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "www.uptimia.com"
+      ]
+    },
+    "uptrends": {
+      "token": "uptrends",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.uptrends.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "urlertbot": {
+      "token": "URLertBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.urlert.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "usercentricsbot": {
+      "token": "Usercentrics",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://usercentrics.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "ut-dorkbot": {
+      "token": "UT-Dorkbot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://security.utexas.edu/dorkbot",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "vaultpress": {
+      "token": "VaultPress",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://vaultpress.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "videootvbot": {
+      "token": "videootvBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://videoo.tv/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "virustotalscan": {
+      "token": "VirusTotalScan",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.virustotal.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "visually-io-shopify-editor": {
+      "token": "Visually",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://help.visually.io/visually.io-editor-cloudflare-signed-agent",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "w3-validator-services": {
+      "token": "W3C-checklink",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://validator.w3.org/services",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "wardbot": {
+      "token": "WARDBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://ward.ai/robot",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "watchbot": {
+      "token": "Watchbot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://watchbot.fflow.net/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "watchful": {
+      "token": "WebsiteOps",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://watchful.net/faqs/technical-support/how-do-i-whitelist-the-watchful-ip-address",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "watchful-1": {
+      "token": "Watchfulli",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://watchful.net/bot-info/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "wayflyer": {
+      "token": "Wayflyer",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.wayflyer.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "web-spider-mount": {
+      "token": "WSM",
+      "aliases": [
+        "webspidermount"
+      ]
+    },
+    "webpagetest": {
+      "token": "PTST",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.webpagetest.org/about",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "webpagetest"
+      ]
+    },
+    "websitepulse": {
+      "token": "websitepulse"
+    },
+    "webstatus247": {
+      "token": "Webstatus247",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.webstatus247.com/bot-information",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "webtotem": {
+      "token": "WTotemBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://docs.wtotem.com/en/wtotembot",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "WTotem"
+      ]
+    },
+    "webzio": {
+      "token": "Webzio",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://webz.io/bot.html",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "webzio-extended": {
+      "token": "Webzio-Extended",
+      "purpose": {
+        "purpose": "training",
+        "sourceUrl": "https://webz.io/bot.html",
+        "note": "Webz.io: Webzio-Extended governs whether content may be used for AI/ML training.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://webz.io/bot.html",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "whitehat": {
+      "token": "WHITEHAT",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://source.whitehatsec.com/help/sentinel/sast-service-detail.html",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "wikimedia-citoid": {
+      "token": "Citoid",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://radar.cloudflare.com/bots/directory/wikimedia-citoid",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "wikimedia-zotero": {
+      "token": "ZoteroTranslationServer",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://radar.cloudflare.com/bots/directory/wikimedia-zotero",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "windowsforum-ai": {
+      "token": "WindowsForum-AI",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://windowsforum.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "wkndhealthcheckbot": {
+      "token": "wknd-bot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://developer.wunderkind.co/docs/server-side-tracking-implementation",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "wordcountbot": {
+      "token": "WordCountBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://weglot.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "wordfence-central": {
+      "token": "Wordfence",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://www.wordfence.com/help/central/connect/#troubleshooting-connection-issues",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "wordline": {
+      "token": "Worldline"
+    },
+    "wordpress-namecheap": {
+      "token": "WordPress"
+    },
+    "worldpay": {
+      "token": "WJHRO"
+    },
+    "wormly": {
+      "token": "WormlyBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.wormly.com/help/server-monitoring/website",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "wovn-crawler-3": {
+      "token": "WovnCrawler",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://support.wovn.io/hc/ja/articles/360043165091",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "wp-compress-saas-2": {
+      "token": "WP-Compress"
+    },
+    "wp-time-capsule": {
+      "token": "WPTimeCapsule"
+    },
+    "wp-umbrella": {
+      "token": "WPUmbrella",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://wp-umbrella.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "wp-umbrella-bot": {
+      "token": "WPUmbrella"
+    },
+    "wpmu-dev-broken-link-checker": {
+      "token": "WPMUDEV-Broken-Link-Checker",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://wpmudev.com/docs/hub-2-0/broken-link-checker-2/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "wpmudev-uptime-monitor-5-0": {
+      "token": "WPMUDEV",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://wpmudev.com/monitor/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "xy-archive-compliance-bot": {
+      "token": "XY-Archive-Compliance",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://xy-archive.helpscoutdocs.com/article/61-does-xy-archive-have-a-dedicated-ip-address",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "XY-Archive-Compliance-Crawler",
+        "XY-Archive-Compliance-Archiver"
+      ]
+    },
+    "yahoo-japan": {
+      "token": "YJ-SAD",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://yahoo.jp/3BSZgF",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "yahoo-jp-seo": {
+      "token": "J-BRW",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.yahoo-help.jp",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "yahoo-mail-proxy": {
+      "token": "YahooMailProxy"
+    },
+    "yahooadmonitor": {
+      "token": "yahoo.adquality.lwd.desktop",
+      "aliases": [
+        "yahoo.adquality"
+      ]
+    },
+    "yahoocache": {
+      "token": "YahooCacheSystem",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.yahoo.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "yahoojapan": {
+      "token": "YJ-DLC",
+      "aliases": [
+        "J-DLC"
+      ]
+    },
+    "yahoolinkpreview": {
+      "token": "Yahoo"
+    },
+    "yahoomailproxy": {
+      "token": "YahooMailProxy",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://help.yahoo.com/kb/yahoo-mail-proxy-SLN28749.html",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "yahoomailproxy-2": {
+      "token": "YahooMailProxy"
+    },
+    "yahooslurp": {
+      "token": "Slurp",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://help.yahoo.com/kb/SLN22600.html",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "sieve-gq1"
+      ]
+    },
+    "yandex": {
+      "token": "YandexBot",
+      "purpose": {
+        "purpose": "search-engine",
+        "sourceUrl": "https://yandex.com/support/webmaster/robot-workings/check-yandex-robots.html",
+        "note": "Yandex search.",
+        "checkedAt": "2026-10-04"
+      },
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://yandex.com/support/webmaster/robot-workings/check-yandex-robots.html",
+        "verifiedAt": "2026-10-03"
+      },
+      "aliases": [
+        "Yandex"
+      ]
+    },
+    "yextbot": {
+      "token": "YextBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://radar.cloudflare.com/bots/directory/yextbot",
+        "verifiedAt": "2026-08-13"
+      },
+      "aliases": [
+        "HeadlessChrome"
+      ]
+    },
+    "ygs-group-falconer-scraper": {
+      "token": "ygs-scraper-bot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://ygscontentlicensing.com/falconer/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "yokoy-group": {
+      "token": "YokoyGroupAG",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://yokoy.io",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "youbot": {
+      "token": "YouBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "operator-docs",
+        "sourceUrl": "https://docs.you.com/youbot",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "zapier": {
+      "token": "Zapier",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://zapier.com/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "zendesk-webhook": {
+      "token": "Zendesk"
+    },
+    "zentria": {
+      "token": "Zentria"
+    },
+    "zipchatbot": {
+      "token": "ZipchatBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.zipchat.ai/bot",
+        "verifiedAt": "2026-10-03"
+      }
+    },
+    "zoombot": {
+      "token": "ZoomBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://www.seozoom.it/",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "zoominfobot": {
+      "token": "ZoominfoBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "https://zoominfo.com",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "zumbot": {
+      "token": "ZumBot",
+      "verification": {
+        "status": "verified",
+        "evidence": "user-agent",
+        "sourceUrl": "http://www.zuminternet.com/en",
+        "verifiedAt": "2026-08-13"
+      }
+    },
+    "zvelo-bot": {
+      "token": "ZveloBot",
+      "aliases": [
+        "zvelo-bot",
+        "Zvelo"
+      ]
+    }
+  }
+}

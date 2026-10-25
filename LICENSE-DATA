@@ -1,0 +1,27 @@
+Crawler Directory data
+Copyright (c) 2026 Coywolf, LLC
+
+The data in this repository (everything under source/ and dist/, and the
+tests/fixtures/ copies of it) is licensed under the Creative Commons
+Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0).
+
+Full legal code: https://creativecommons.org/licenses/by-nc/4.0/legalcode
+Summary:         https://creativecommons.org/licenses/by-nc/4.0/
+
+Attribution
+-----------
+Contains data from Cloudflare Radar (https://radar.cloudflare.com), licensed
+CC BY-NC 4.0. Coywolf has modified it: robots.txt token verification against
+operators' documentation, purposes, presets (groups) and corrections, plus
+bots that Radar doesn't list.
+
+When you share or adapt this data, credit both Coywolf (Crawler Directory,
+https://github.com/coywolf-llc/crawler-directory) and Cloudflare Radar, link
+to the license, and say whether you changed it. You may not use the data for
+commercial purposes.
+
+No warranties are given. The license may not give you all of the permissions
+necessary for your intended use.
+
+The code in this repository is licensed separately under the MIT License; see
+LICENSE.
